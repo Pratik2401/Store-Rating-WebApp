@@ -1,4 +1,4 @@
-/* Common Navbar Styles */
+
 .CommonNavbarOuter {
   position: sticky;
   top: 0;
@@ -115,7 +115,6 @@
   color: #dc3545 !important;
 }
 
-/* Mobile Responsive */
 @media (max-width: 991.98px) {
   .CommonNavbarOuter.hide-on-mobile {
     display: none;
@@ -131,12 +130,10 @@
   }
 }
 
-/* Navbar color overrides */
 .navbar-user-color {
   color: #6c757d !important;
 }
 
-/* Override any potential Bootstrap transparency */
 .dropdown-menu {
   background-color: #ffffff !important;
   opacity: 1 !important;

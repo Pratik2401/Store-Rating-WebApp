@@ -1,38 +1,29 @@
-/* Responsive Design Utilities */
 
-/* Mobile First Responsive Design */
-
-/* Extra Small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
   .hidden-xs { display: none !important; }
   .visible-xs { display: block !important; }
   .visible-xs-inline { display: inline !important; }
   .visible-xs-inline-block { display: inline-block !important; }
   .visible-xs-flex { display: flex !important; }
-  
-  /* Text sizes for mobile */
+
   .text-xs-sm { font-size: var(--font-size-sm) !important; }
   .text-xs-base { font-size: var(--font-size-base) !important; }
   .text-xs-lg { font-size: var(--font-size-lg) !important; }
-  
-  /* Spacing for mobile */
+
   .p-xs-1 { padding: 0.25rem !important; }
   .p-xs-2 { padding: 0.5rem !important; }
   .p-xs-3 { padding: 1rem !important; }
   .m-xs-1 { margin: 0.25rem !important; }
   .m-xs-2 { margin: 0.5rem !important; }
   .m-xs-3 { margin: 1rem !important; }
-  
-  /* Full width on mobile */
+
   .w-xs-100 { width: 100% !important; }
   .h-xs-auto { height: auto !important; }
-  
-  /* Mobile specific utilities */
+
   .mobile-center { text-align: center !important; }
   .mobile-left { text-align: left !important; }
   .mobile-right { text-align: right !important; }
-  
-  /* Mobile sidebar */
+
   .mobile-sidebar-overlay {
     position: fixed;
     top: 0;
@@ -47,8 +38,7 @@
   .mobile-sidebar-overlay.show {
     display: block;
   }
-  
-  /* Touch-friendly buttons for mobile */
+
   .btn {
     min-height: 44px;
     min-width: 44px;
@@ -62,8 +52,7 @@
   .btn-lg {
     min-height: 48px;
   }
-  
-  /* Modal Mobile */
+
   .modal-dialog {
     margin: 0.5rem;
   }
@@ -73,7 +62,6 @@
   }
 }
 
-/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .hidden-sm { display: none !important; }
   .visible-sm { display: block !important; }
@@ -82,7 +70,6 @@
   .visible-sm-flex { display: flex !important; }
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .hidden-md { display: none !important; }
   .visible-md { display: block !important; }
@@ -91,7 +78,6 @@
   .visible-md-flex { display: flex !important; }
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .hidden-lg { display: none !important; }
   .visible-lg { display: block !important; }
@@ -100,7 +86,6 @@
   .visible-lg-flex { display: flex !important; }
 }
 
-/* Extra Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .hidden-xl { display: none !important; }
   .visible-xl { display: block !important; }
@@ -109,19 +94,16 @@
   .visible-xl-flex { display: flex !important; }
 }
 
-/* Container Queries Support */
 @container (max-width: 400px) {
   .container-hidden { display: none !important; }
   .container-visible { display: block !important; }
 }
 
-/* High DPI / Retina Display Support */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .retina-hidden { display: none !important; }
   .retina-visible { display: block !important; }
 }
 
-/* Landscape / Portrait Orientation */
 @media (orientation: landscape) {
   .landscape-hidden { display: none !important; }
   .landscape-visible { display: block !important; }
@@ -132,19 +114,16 @@
   .portrait-visible { display: block !important; }
 }
 
-/* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
   .dark-hidden { display: none !important; }
   .dark-visible { display: block !important; }
 }
 
-/* Light Mode Support */
 @media (prefers-color-scheme: light) {
   .light-hidden { display: none !important; }
   .light-visible { display: block !important; }
 }
 
-/* High Contrast Mode Support */
 @media (prefers-contrast: high) {
   .high-contrast-border {
     border: 2px solid #000;
@@ -156,7 +135,6 @@
   }
 }
 
-/* Reduced Motion Support */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -167,7 +145,6 @@
   }
 }
 
-/* Print Styles */
 @media print {
   .print-hidden { display: none !important; }
   .print-visible { display: block !important; }
@@ -187,7 +164,6 @@
   }
 }
 
-/* Responsive Font Sizes */
 @media (min-width: 576px) {
   .fs-responsive-sm { font-size: calc(0.875rem + 0.5vw) !important; }
   .fs-responsive-base { font-size: calc(1rem + 0.5vw) !important; }
@@ -206,7 +182,6 @@
   .fs-responsive-lg { font-size: 1.125rem !important; }
 }
 
-/* Responsive Spacing */
 @media (min-width: 576px) {
   .p-responsive { padding: calc(1rem + 1vw) !important; }
   .m-responsive { margin: calc(1rem + 1vw) !important; }

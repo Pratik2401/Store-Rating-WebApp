@@ -1,4 +1,4 @@
-/* Global Reset for HTML and Body */
+
 html, body {
   height: auto !important;
   min-height: 100vh;
@@ -11,7 +11,6 @@ html, body {
   min-height: 100vh;
 }
 
-/* Vamtam Global Theme Variables */
 :root {
   --e-global-color-vamtam_accent_1: #010ED0;
   --e-global-color-vamtam_accent_2: #F5F5F5;
@@ -25,8 +24,7 @@ html, body {
   --e-global-color-a9cf77f: #0A0D31;
   --e-global-color-8a42445: #F5F5F1B3;
   --e-global-color-ba6d9a8: #343434;
-  
-  /* Custom Color Variables */
+
   --star-color: #010ED0;
   --star-hover: #0c0fa8;
   --primary-color: #010ED0;
@@ -173,7 +171,6 @@ html, body {
   color: var(--e-global-color-vamtam_accent_8);
 }
 
-/* Font Size Variables */
 :root[data-font-size="small"] {
   --base-font-size: 0.875rem;
   --h1-size: 2rem;
@@ -214,7 +211,6 @@ html, body {
   --h6-size: 1.5rem;
 }
 
-/* Base Styles */
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
@@ -229,7 +225,6 @@ h4 { font-size: var(--h4-size); }
 h5 { font-size: var(--h5-size); }
 h6 { font-size: var(--h6-size); }
 
-/* Cards */
 .card {
   background-color: var(--bg-primary);
   border-color: var(--border-color);
@@ -249,7 +244,6 @@ h6 { font-size: var(--h6-size); }
   color: var(--text-secondary);
 }
 
-/* Forms */
 .form-control {
   background-color: var(--bg-primary);
   border-color: var(--border-color);
@@ -273,12 +267,10 @@ h6 { font-size: var(--h6-size); }
   color: var(--text-primary);
 }
 
-/* Buttons */
 .btn {
   transition: all 0.3s ease;
 }
 
-/* Tables */
 .table {
   color: var(--text-primary);
 }
@@ -296,7 +288,6 @@ h6 { font-size: var(--h6-size); }
   background-color: var(--bg-secondary);
 }
 
-/* Navigation */
 .navbar {
   background-color: var(--bg-primary);
   border-color: var(--border-color);
@@ -311,7 +302,6 @@ h6 { font-size: var(--h6-size); }
   color: var(--primary-color);
 }
 
-/* Sidebar */
 .sidebar {
   background-color: var(--bg-secondary);
   border-right: 1px solid var(--border-color);
@@ -335,12 +325,10 @@ h6 { font-size: var(--h6-size); }
   color: white;
 }
 
-/* Alerts */
 .alert {
   border-color: var(--border-color);
 }
 
-/* Modals */
 .modal-content {
   background-color: #ffffff !important;
   border-color: var(--border-color);
@@ -360,7 +348,6 @@ h6 { font-size: var(--h6-size); }
   border-top-color: var(--border-color);
 }
 
-/* Global Bootstrap Modal Styles - Ensure all modals have white background */
 .modal .modal-content {
   background-color: #ffffff !important;
 }
@@ -377,7 +364,6 @@ h6 { font-size: var(--h6-size); }
   background-color: #ffffff !important;
 }
 
-/* Override any theme-based modal backgrounds */
 .modal-content,
 .modal-header,
 .modal-body,
@@ -385,7 +371,6 @@ h6 { font-size: var(--h6-size); }
   background-color: #ffffff !important;
 }
 
-/* Dropdowns */
 .dropdown-menu {
   background-color: var(--bg-primary);
   border-color: var(--border-color);
@@ -401,13 +386,11 @@ h6 { font-size: var(--h6-size); }
   color: var(--text-primary);
 }
 
-/* Tooltips */
 .tooltip-inner {
   background-color: var(--dark-color);
   color: var(--light-color);
 }
 
-/* High Contrast Mode */
 .high-contrast {
   --primary-color: #000080;
   --secondary-color: #404040;
@@ -441,7 +424,6 @@ h6 { font-size: var(--h6-size); }
   --border-light: #cccccc;
 }
 
-/* Reduced Motion */
 .reduce-motion,
 .reduce-motion *,
 .reduce-motion *::before,
@@ -452,7 +434,6 @@ h6 { font-size: var(--h6-size); }
   scroll-behavior: auto !important;
 }
 
-/* Loading Spinner */
 .loading-container {
   background-color: var(--bg-primary);
   color: var(--text-primary);
@@ -462,7 +443,6 @@ h6 { font-size: var(--h6-size); }
   color: var(--primary-color);
 }
 
-/* Error Boundary */
 .error-boundary-container {
   background-color: var(--bg-primary);
   color: var(--text-primary);
@@ -472,12 +452,10 @@ h6 { font-size: var(--h6-size); }
   border-color: var(--danger-color);
 }
 
-/* Toast Notifications */
 .custom-toast-container {
   font-size: var(--base-font-size);
 }
 
-/* Theme Toggle */
 .theme-toggle {
   border: none;
   background: transparent;
@@ -488,7 +466,6 @@ h6 { font-size: var(--h6-size); }
   background-color: var(--bg-secondary);
 }
 
-/* Storage Manager */
 .storage-stat {
   color: var(--text-secondary);
   margin-bottom: 0.5rem;
@@ -500,7 +477,6 @@ h6 { font-size: var(--h6-size); }
   color: var(--text-primary);
 }
 
-/* User Preferences */
 .preference-section {
   border-bottom: 1px solid var(--border-light);
   padding-bottom: 1rem;
@@ -517,7 +493,6 @@ h6 { font-size: var(--h6-size); }
   margin-bottom: 1rem;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   :root {
     --base-font-size: 0.9rem;
@@ -532,7 +507,6 @@ h6 { font-size: var(--h6-size); }
   }
 }
 
-/* Print Styles */
 @media print {
   body {
     background-color: white !important;
@@ -547,7 +521,6 @@ h6 { font-size: var(--h6-size); }
   }
 }
 
-/* Focus Styles for Accessibility */
 .form-control:focus,
 .btn:focus,
 .nav-link:focus {
@@ -555,7 +528,6 @@ h6 { font-size: var(--h6-size); }
   outline-offset: 2px;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;

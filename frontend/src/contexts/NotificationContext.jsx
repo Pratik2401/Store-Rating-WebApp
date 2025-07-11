@@ -1,11 +1,21 @@
+/**
+ * Notification Context Provider
+ * 
+ * This module provides a comprehensive notification system using react-toastify.
+ * It offers success, error, warning, info, loading, and custom notifications
+ * with utility functions for common notification patterns.
+ * 
+ * @module contexts/NotificationContext
+ * @requires react
+ * @requires react-toastify
+ */
+
 import React, { createContext, useContext, useCallback } from 'react'
 import { toast, ToastContainer, Slide } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
-// Create notification context
 const NotificationContext = createContext()
 
-// Hook to use notifications
 export const useNotification = () => {
   const context = useContext(NotificationContext)
   if (!context) {
@@ -14,7 +24,6 @@ export const useNotification = () => {
   return context
 }
 
-// Default toast configuration
 const defaultToastConfig = {
   position: "top-right",
   autoClose: 5000,
@@ -26,9 +35,7 @@ const defaultToastConfig = {
   transition: Slide,
 }
 
-// Notification Provider Component
 export const NotificationProvider = ({ children }) => {
-  // Success notification
   const showSuccess = useCallback((message, options = {}) => {
     toast.success(message, {
       ...defaultToastConfig,
@@ -36,16 +43,14 @@ export const NotificationProvider = ({ children }) => {
     })
   }, [])
 
-  // Error notification
   const showError = useCallback((message, options = {}) => {
     toast.error(message, {
       ...defaultToastConfig,
-      autoClose: 7000, // Keep error messages longer
+      autoClose: 7000,
       ...options,
     })
   }, [])
 
-  // Warning notification
   const showWarning = useCallback((message, options = {}) => {
     toast.warning(message, {
       ...defaultToastConfig,
@@ -53,7 +58,6 @@ export const NotificationProvider = ({ children }) => {
     })
   }, [])
 
-  // Info notification
   const showInfo = useCallback((message, options = {}) => {
     toast.info(message, {
       ...defaultToastConfig,
@@ -61,7 +65,6 @@ export const NotificationProvider = ({ children }) => {
     })
   }, [])
 
-  // Loading notification with promise
   const showLoading = useCallback((promise, messages = {}) => {
     const defaultMessages = {
       loading: 'Processing...',
@@ -84,7 +87,6 @@ export const NotificationProvider = ({ children }) => {
     )
   }, [])
 
-  // Custom notification with custom content
   const showCustom = useCallback((content, options = {}) => {
     toast(content, {
       ...defaultToastConfig,
@@ -92,17 +94,14 @@ export const NotificationProvider = ({ children }) => {
     })
   }, [])
 
-  // Dismiss all notifications
   const dismissAll = useCallback(() => {
     toast.dismiss()
   }, [])
 
-  // Dismiss specific notification
   const dismiss = useCallback((toastId) => {
     toast.dismiss(toastId)
   }, [])
 
-  // Update existing notification
   const update = useCallback((toastId, render, options = {}) => {
     toast.update(toastId, {
       render,
@@ -110,7 +109,6 @@ export const NotificationProvider = ({ children }) => {
     })
   }, [])
 
-  // Check if notification is active
   const isActive = useCallback((toastId) => {
     return toast.isActive(toastId)
   }, [])
@@ -150,9 +148,7 @@ export const NotificationProvider = ({ children }) => {
   )
 }
 
-// Utility functions for common notification patterns
 export const notificationUtils = {
-  // API response notifications
   handleApiResponse: (response, successMessage = 'Operation successful!') => {
     const { showSuccess, showError } = useNotification()
     
@@ -163,7 +159,6 @@ export const notificationUtils = {
     }
   },
 
-  // Form validation notifications
   handleFormErrors: (errors) => {
     const { showError } = useNotification()
     
@@ -176,7 +171,6 @@ export const notificationUtils = {
     }
   },
 
-  // Network error notifications
   handleNetworkError: (error) => {
     const { showError } = useNotification()
     
@@ -195,7 +189,6 @@ export const notificationUtils = {
     }
   },
 
-  // Authentication notifications
   loginSuccess: (userName) => {
     const { showSuccess } = useNotification()
     showSuccess(`Welcome back, ${userName}!`)
@@ -211,7 +204,6 @@ export const notificationUtils = {
     showSuccess('Registration successful! Welcome to the platform!')
   },
 
-  // Data operation notifications
   dataCreated: (itemType = 'Item') => {
     const { showSuccess } = useNotification()
     showSuccess(`${itemType} created successfully!`)
@@ -227,7 +219,6 @@ export const notificationUtils = {
     showSuccess(`${itemType} deleted successfully!`)
   },
 
-  // File operation notifications
   fileUploadSuccess: (fileName) => {
     const { showSuccess } = useNotification()
     showSuccess(`${fileName} uploaded successfully!`)
@@ -238,13 +229,11 @@ export const notificationUtils = {
     showError(`Failed to upload ${fileName}: ${error}`)
   },
 
-  // Permission notifications
   accessDenied: () => {
     const { showWarning } = useNotification()
     showWarning('Access denied. You do not have permission to perform this action.')
   },
 
-  // Maintenance notifications
   maintenanceMode: () => {
     const { showInfo } = useNotification()
     showInfo('The system is currently under maintenance. Some features may be unavailable.')

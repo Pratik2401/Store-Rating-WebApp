@@ -1,24 +1,13 @@
-/* Main styles entry point */
+
 @import './themes.css';
 @import './utils/Animations.css';
-
-/* Layout styles */
-/* @import './layouts/admin.css'; */
-
-/* Component styles */
 @import './components/sweetalert.css';
 @import './components/loading.css';
-/* @import './components/dashboard.css'; */
+
 @import './components/CommonNavbar.css';
 @import './components/CommonSidebar.css';
-/* @import './components/StoreList.css';
-@import './components/UserProfile.css';
-@import './components/RatingModal.css';
-@import './components/store-details.css'; */
+
 @import './User/userDashboard.css';
 @import './SystemAdmin/systemAdminUserManagement.css';
-/* @import './Common/user-details.css'; */
-/* @import './components/store-management.css'; */
 
-/* Page styles */
 @import './pages/login.css';

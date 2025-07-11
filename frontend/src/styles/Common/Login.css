@@ -1,4 +1,4 @@
-/* Login Page Styles */
+
 
 .LoginPageContainer {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -78,7 +78,6 @@
   transform: translateY(-1px);
 }
 
-/* Login Page Mobile Responsive */
 @media (max-width: 575.98px) {
   .LoginPageRow {
     padding: 0.5rem;
@@ -113,7 +112,6 @@
   }
 }
 
-/* Print styles */
 @media print {
   .LoginDemoSection {
     display: none !important;

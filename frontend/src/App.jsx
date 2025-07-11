@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from 'react-router-dom'
 import { AuthProvider } from './contexts/AuthContext'
 import { NotificationProvider, useNotification } from './contexts/NotificationContext'
-import ErrorBoundary from './components/Common/ErrorBoundary'
+
 
 import ProtectedRoute from './components/ProtectedRoute'
 import Login from './components/Common/Login'
@@ -62,9 +62,9 @@ const AppContent = () => {
           path="/admin/*" 
           element={
             <ProtectedRoute requiredRole="system_admin">
-              <ErrorBoundary minimal>
+             
                 <AdminStructure />
-              </ErrorBoundary>
+              
             </ProtectedRoute>
           } 
         />
@@ -72,9 +72,9 @@ const AppContent = () => {
           path="/store-owner/*" 
           element={
             <ProtectedRoute requiredRole="store_owner">
-              <ErrorBoundary minimal>
+             
                 <StoreOwnerDashboard />
-              </ErrorBoundary>
+              
             </ProtectedRoute>
           } 
         />
@@ -82,9 +82,9 @@ const AppContent = () => {
           path="/user/*" 
           element={
             <ProtectedRoute requiredRole="normal_user">
-              <ErrorBoundary minimal>
+              
                 <UserDashboard />
-              </ErrorBoundary>
+                
             </ProtectedRoute>
           } 
         />
@@ -97,7 +97,7 @@ const AppContent = () => {
 
 function App() {
   return (
-    <ErrorBoundary>
+    
       <NotificationProvider>
         <AuthProvider>
           <Router>
@@ -105,7 +105,7 @@ function App() {
           </Router>
         </AuthProvider>
       </NotificationProvider>
-    </ErrorBoundary>
+      
   )
 }
 
