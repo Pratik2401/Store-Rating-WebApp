@@ -1,0 +1,27 @@
+{
+  "name": "store-rating-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-rbac": "node test-rbac.js",
+    "setup-db": "mysql -u root -p store_rating_platform < database/schema.sql && mysql -u root -p store_rating_platform < database/migration_001_initial_setup.sql && mysql -u root -p store_rating_platform < database/migration_002_rbac_security.sql"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "Backend API for Store Rating Platform",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.1.0",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.1",
+    "nodemon": "^3.1.10"
+  }
+}

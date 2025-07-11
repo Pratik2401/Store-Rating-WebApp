@@ -1,0 +1,535 @@
+/* User Dashboard Modern Styling */
+.UserDashboardContainer {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.UserLayoutRow {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+
+.UserSidebarContainer {
+  flex-shrink: 0;
+  background-color: #ffffff;
+  border-right: 2px solid #e9ecef;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.UserSidebarContainer.open {
+  position: relative;
+  z-index: 1050;
+}
+
+.UserMainColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.UserNavbarRow {
+  flex-shrink: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 2px solid #e9ecef;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  z-index: 1000;
+}
+
+.UserNavbarRow.hide-when-sidebar-open {
+  display: block;
+}
+
+.UserMainContent {
+  flex: 1;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: calc(100vh - 70px);
+  padding: 0;
+  overflow-y: auto;
+}
+
+.UserMainContent.sidebar-collapsed {
+  margin-left: 0;
+}
+
+.UserMainContainer {
+  max-width: none;
+  padding: 2rem;
+  background: transparent;
+}
+
+/* Dashboard Cards Enhanced */
+.UserDashboard .card,
+.UserMainContainer .card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 1px solid rgba(233, 236, 239, 0.6);
+  overflow: hidden;
+}
+
+.UserDashboard .card:hover,
+.UserMainContainer .card:hover {
+  box-shadow: 0 8px 30px rgba(1, 14, 208, 0.15);
+  transform: translateY(-4px);
+  border-color: rgba(1, 14, 208, 0.2);
+}
+
+.UserDashboard .card-header,
+.UserMainContainer .card-header {
+  background: linear-gradient(135deg, #010ED0 0%, #0c0fa8 100%);
+  border-bottom: none;
+  padding: 1.5rem;
+  color: #ffffff;
+}
+
+.UserDashboard .card-body,
+.UserMainContainer .card-body {
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.UserDashboard .card-title,
+.UserMainContainer .card-title {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.UserDashboard .card-text,
+.UserMainContainer .card-text {
+  color: #6c757d;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Stats Cards with Brand Colors */
+.UserDashboard .stats-card {
+  background: linear-gradient(135deg, #010ED0 0%, #0c0fa8 100%);
+  color: #ffffff;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.UserDashboard .stats-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+}
+
+.UserDashboard .stats-card .card-body {
+  padding: 2.5rem;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+}
+
+.UserDashboard .stats-card .stats-number {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.UserDashboard .stats-card .stats-label {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-top: 0.75rem;
+  font-weight: 500;
+}
+
+/* Welcome Section Enhanced */
+.UserDashboard .welcome-section {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 20px;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  border: 2px solid rgba(1, 14, 208, 0.1);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.UserDashboard .welcome-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #010ED0 0%, #0c0fa8 100%);
+}
+
+.UserDashboard .welcome-section h1 {
+  color: #010ED0;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.UserDashboard .welcome-section p {
+  color: #6c757d;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* Action Buttons Modern Design */
+.UserDashboard .action-btn {
+  background: linear-gradient(135deg, #010ED0 0%, #0c0fa8 100%);
+  border: none;
+  color: #ffffff !important;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(1, 14, 208, 0.3);
+  font-size: 1rem;
+}
+
+.UserDashboard .action-btn:hover {
+  background: linear-gradient(135deg, #0c0fa8 0%, #010ED0 100%);
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(1, 14, 208, 0.4);
+  text-decoration: none;
+}
+
+.UserDashboard .action-btn:focus {
+  box-shadow: 0 0 0 3px rgba(1, 14, 208, 0.3);
+  outline: none;
+}
+
+.UserDashboard .action-btn:active {
+  transform: translateY(-1px);
+}
+
+/* Outline Action Button Variant */
+.UserDashboard .action-btn-outline {
+  background: transparent;
+  border: 2px solid #010ED0;
+  color: #010ED0;
+  padding: 0.75rem 2rem;
+  font-size: 0.9rem;
+  box-shadow: none;
+}
+
+.UserDashboard .action-btn-outline:hover {
+  background: linear-gradient(135deg, #010ED0 0%, #0c0fa8 100%);
+  border-color: #010ED0;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(1, 14, 208, 0.3);
+}
+
+/* Small Action Button Variant */
+.UserDashboard .action-btn-sm {
+  padding: 0.5rem 1.5rem;
+  font-size: 0.875rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.UserDashboard .action-btn-sm:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(1, 14, 208, 0.3);
+}
+
+/* Mobile Sidebar Overlay Enhanced */
+.user-sidebar-mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1040;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  /* Removed blur effect */
+}
+
+.user-sidebar-mobile-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Content Area Styling */
+.UserMainContainer .container-fluid {
+  padding: 0;
+}
+
+/* Enhanced Button Styles */
+.UserMainContainer .btn-primary,
+.UserDashboard .btn-primary {
+  background: linear-gradient(135deg, #010ED0 0%, #0c0fa8 100%);
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(1, 14, 208, 0.3);
+  transition: all 0.3s ease;
+}
+
+.UserMainContainer .btn-primary:hover,
+.UserDashboard .btn-primary:hover {
+  background: linear-gradient(135deg, #0c0fa8 0%, #010ED0 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(1, 14, 208, 0.4);
+}
+
+.UserMainContainer .btn-outline-primary,
+.UserDashboard .btn-outline-primary {
+  border: 2px solid #010ED0;
+  color: white !important;
+  border-radius: 10px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background: transparent !important;
+}
+
+.UserMainContainer .btn-outline-primary:hover,
+.UserDashboard .btn-outline-primary:hover {
+  background: linear-gradient(135deg, #010ED0 0%, #0c0fa8 100%);
+  border-color: #010ED0;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(1, 14, 208, 0.3);
+}
+
+/* Small Button Variants */
+.UserMainContainer .btn-sm,
+.UserDashboard .btn-sm {
+  padding: 0.5rem 1.5rem;
+  font-size: 0.875rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Button Link Styles */
+.UserMainContainer .btn[href],
+.UserDashboard .btn[href] {
+  text-decoration: none;
+}
+
+.UserMainContainer .btn[href]:hover,
+.UserDashboard .btn[href]:hover {
+  text-decoration: none;
+}
+
+/* Button Container Spacing */
+.UserDashboard .text-center {
+  padding: 2rem 1rem;
+}
+
+.UserDashboard .card-header .d-flex {
+  align-items: center;
+}
+
+.UserDashboard .card-header .action-btn-outline {
+  margin-left: auto;
+}
+
+/* Button Icon Alignment */
+.UserDashboard .action-btn svg,
+.UserDashboard .btn svg {
+  vertical-align: middle;
+}
+
+/* Button Group Spacing */
+.UserDashboard .d-flex.align-items-center.justify-content-between .action-btn-sm {
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+/* Focus States for Better Accessibility */
+.UserDashboard .action-btn:focus-visible,
+.UserDashboard .btn:focus-visible {
+  outline: 3px solid rgba(1, 14, 208, 0.5);
+  outline-offset: 2px;
+}
+
+/* Loading State for Buttons */
+.UserDashboard .action-btn:disabled,
+.UserDashboard .btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Button Text Consistency */
+.UserDashboard .action-btn,
+.UserDashboard .btn {
+  white-space: nowrap;
+  text-transform: none;
+  letter-spacing: 0.025em;
+}
+
+/* Desktop Layout Responsive */
+@media (min-width: 992px) {
+  .UserMainColumn {
+    margin-left: 0;
+  }
+  
+  .UserMainColumn.sidebar-collapsed {
+    margin-left: 80px;
+  }
+  
+  .user-sidebar-mobile-overlay {
+    display: none;
+  }
+}
+
+/* Mobile Layout Enhanced */
+@media (max-width: 991.98px) {
+  .UserMainColumn {
+    margin-left: 0;
+  }
+  
+  .UserNavbarRow.hide-when-sidebar-open {
+    display: none;
+  }
+  
+  .UserSidebarContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+  }
+  
+  .UserMainContainer {
+    padding: 1.5rem;
+  }
+  
+  .UserDashboard .welcome-section {
+    padding: 2rem;
+  }
+  
+  .UserDashboard .welcome-section h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Tablet Layout */
+@media (max-width: 768px) {
+  .UserMainContainer {
+    padding: 1rem;
+  }
+  
+  .UserDashboard .welcome-section {
+    padding: 1.5rem;
+  }
+  
+  .UserDashboard .welcome-section h1 {
+    font-size: 1.75rem;
+  }
+  
+  .UserDashboard .stats-card .stats-number {
+    font-size: 2.5rem;
+  }
+}
+
+/* Animation and Transitions */
+.UserMainColumn,
+.UserMainContent {
+  transition: all 0.3s ease;
+}
+
+/* Global Layout Enhancements */
+.UserDashboardContainer * {
+  box-sizing: border-box;
+}
+
+.UserDashboardContainer .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Common component overrides for User dashboard */
+.UserDashboardContainer .CommonSidebar {
+  background-color: #ffffff;
+  border-right: 2px solid #e9ecef;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.UserDashboardContainer .CommonNavbar {
+  background-color: #ffffff;
+  border-bottom: 2px solid #e9ecef;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Loading States and Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.UserMainContainer .card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.UserMainContainer .card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.UserMainContainer .card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.UserMainContainer .card:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+/* Focus States for Accessibility */
+.UserDashboard .action-btn:focus-visible,
+.UserMainContainer .btn:focus-visible {
+  outline: 3px solid rgba(1, 14, 208, 0.5);
+  outline-offset: 2px;
+}
+
+/* Custom Scrollbar */
+.UserMainContent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.UserMainContent::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.UserMainContent::-webkit-scrollbar-thumb {
+  background: #010ED0;
+  border-radius: 4px;
+}
+
+.UserMainContent::-webkit-scrollbar-thumb:hover {
+  background: #0c0fa8;
+}

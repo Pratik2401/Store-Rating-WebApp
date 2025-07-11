@@ -1,0 +1,427 @@
+/* User Dashboard Layout Styles */
+@import "./LayoutCommon.css";
+/* Main Wrapper */
+.UserMainWrapper {
+  min-height: calc(100vh - 60px);
+}
+
+/* Sidebar */
+.UserSidebar {
+  width: 280px;
+  min-height: calc(100vh - 60px);
+  background-color: var(--background-secondary);
+  border-right: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1000;
+}
+
+.UserSidebar.collapsed {
+  width: 70px;
+}
+
+.UserSidebarContent {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.UserSidebarHeader {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.UserSidebarTitle {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* Sidebar Navigation */
+.UserSidebarNav {
+  gap: 0.25rem;
+}
+
+.UserSidebarNavItem {
+  margin-bottom: 0.25rem;
+}
+
+.UserSidebarNavLink {
+  display: flex;
+  align-items: center;
+  padding: 0.875rem 1rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.UserSidebarNavLink:hover {
+  color: var(--primary-color);
+  background-color: var(--primary-light);
+  text-decoration: none;
+}
+
+.UserSidebarNavLink.active {
+  color: var(--primary-color);
+  background-color: var(--primary-light);
+  font-weight: 600;
+}
+
+.UserSidebarNavLink.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: var(--primary-color);
+}
+
+.UserSidebarNavIcon {
+  font-size: 1.125rem;
+  margin-right: 0.875rem;
+  min-width: 1.125rem;
+  transition: transform 0.2s ease;
+}
+
+.UserSidebarNavText {
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.UserSidebarNavDescription {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.125rem;
+  line-height: 1.2;
+  transition: opacity 0.3s ease;
+}
+
+/* Collapsed Sidebar Styles */
+.UserSidebar.collapsed .UserSidebarHeader {
+  padding: 1rem 0.5rem;
+}
+
+.UserSidebar.collapsed .UserSidebarTitle {
+  display: none;
+}
+
+.UserSidebar.collapsed .UserSidebarNavLink {
+  padding: 0.875rem 0.5rem;
+  justify-content: center;
+}
+
+.UserSidebar.collapsed .UserSidebarNavIcon {
+  margin-right: 0;
+  font-size: 1.25rem;
+}
+
+.UserSidebar.collapsed .UserSidebarNavText,
+.UserSidebar.collapsed .UserSidebarNavDescription {
+  display: none;
+}
+
+.UserSidebar.collapsed .UserSidebarContent {
+  padding: 0.5rem;
+}
+
+/* Main Content */
+.UserMainContent {
+  flex: 1;
+  min-height: calc(100vh - 60px);
+  transition: margin-left 0.3s ease;
+  background-color: var(--background-primary);
+}
+
+.UserMainContent.sidebar-collapsed {
+  margin-left: 0;
+}
+
+.UserMainContainer {
+  padding: 1.5rem;
+  max-width: 100%;
+}
+
+/* Navbar Styles */
+.UserNavbar {
+  height: 60px;
+  background-color: var(--background-secondary);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.UserNavbarBrand {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.UserNavbarBrand:hover {
+  color: var(--primary-hover);
+  text-decoration: none;
+}
+
+.UserNavbarToggle {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease;
+}
+
+.UserNavbarToggle:hover {
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.UserNavbarUser {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.UserNavbarUserInfo {
+  text-align: right;
+}
+
+.UserNavbarUserName {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.UserNavbarUserRole {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  margin-bottom: 0;
+}
+
+.UserNavbarAvatar {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.UserNavbarDropdown .dropdown-toggle {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  padding: 0.5rem;
+}
+
+.UserNavbarDropdown .dropdown-toggle:hover {
+  color: var(--primary-color);
+}
+
+.UserNavbarDropdown .dropdown-toggle::after {
+  display: none;
+}
+
+.UserNavbarDropdown .dropdown-menu {
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+  min-width: 200px;
+}
+
+.UserNavbarDropdown .dropdown-item {
+  padding: 0.75rem 1rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.UserNavbarDropdown .dropdown-item:hover {
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+}
+
+.UserNavbarDropdown .dropdown-item .fa {
+  margin-right: 0.5rem;
+  width: 1rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .UserSidebar {
+    position: fixed;
+    left: -280px;
+    top: 60px;
+    z-index: 1050;
+    height: calc(100vh - 60px);
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .UserSidebar.show {
+    left: 0;
+  }
+
+  .UserSidebar.collapsed {
+    left: -70px;
+  }
+
+  .UserSidebar.collapsed.show {
+    left: 0;
+    width: 70px;
+  }
+
+  .UserMainContent {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .UserMainContainer {
+    padding: 1rem;
+  }
+
+  .UserNavbarUser .UserNavbarUserInfo {
+    display: none;
+  }
+
+  .UserNavbarUser .UserNavbarAvatar {
+    width: 35px;
+    height: 35px;
+    font-size: 0.8rem;
+  }
+
+  .UserNavbarDropdown .dropdown-menu {
+    min-width: 180px;
+    right: 0;
+    left: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .UserMainContainer {
+    padding: 0.75rem;
+  }
+
+  .UserNavbarBrand {
+    font-size: 1.1rem;
+  }
+
+  .UserNavbarUser .UserNavbarAvatar {
+    width: 32px;
+    height: 32px;
+    font-size: 0.75rem;
+  }
+
+  .UserSidebar {
+    width: 260px;
+  }
+
+  .UserSidebar.collapsed {
+    width: 60px;
+  }
+}
+
+/* Sidebar Overlay for Mobile */
+@media (max-width: 768px) {
+  .UserSidebarOverlay {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1040;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .UserSidebarOverlay.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Animation Enhancements */
+.UserSidebarNavLink {
+  position: relative;
+  overflow: hidden;
+}
+
+.UserSidebarNavLink::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.UserSidebarNavLink:hover::after {
+  left: 100%;
+}
+
+/* Focus Styles for Accessibility */
+.UserSidebarNavLink:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.UserNavbarToggle:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.UserNavbarDropdown .dropdown-toggle:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .UserSidebar {
+    border-right: 2px solid var(--text-primary);
+  }
+
+  .UserSidebarNavLink {
+    border: 1px solid transparent;
+  }
+
+  .UserSidebarNavLink:hover,
+  .UserSidebarNavLink.active {
+    border-color: var(--primary-color);
+  }
+
+  .UserNavbar {
+    border-bottom: 2px solid var(--text-primary);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .UserSidebar,
+  .UserNavbar {
+    display: none;
+  }
+
+  .UserMainContent {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .UserMainContainer {
+    padding: 0;
+  }
+}

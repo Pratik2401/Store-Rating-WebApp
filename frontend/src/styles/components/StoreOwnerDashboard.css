@@ -1,0 +1,554 @@
+/* Store Owner Dashboard Component Styles */
+.StoreOwnerDashboard {
+  padding: 0;
+}
+
+/* Dashboard Header */
+.StoreOwnerDashboardHeader {
+  margin-bottom: 1.5rem;
+}
+
+.StoreOwnerDashboardTitle {
+  color: var(--primary-dark);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.StoreOwnerDashboardSubtitle {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.StoreOwnerDashboardDate {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Stats Cards */
+.StoreOwnerStatsGrid {
+  margin-bottom: 2rem;
+}
+
+.StoreOwnerStatsCard {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.StoreOwnerStatsCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.StoreOwnerStatsCard .card-body {
+  padding: 1.5rem;
+}
+
+.StoreOwnerStatsIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.StoreOwnerStatsIcon.primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+}
+
+.StoreOwnerStatsIcon.warning {
+  background: linear-gradient(135deg, var(--warning-color), var(--warning-hover));
+}
+
+.StoreOwnerStatsIcon.info {
+  background: linear-gradient(135deg, var(--info-color), var(--info-hover));
+}
+
+.StoreOwnerStatsIcon.star {
+  background: linear-gradient(135deg, var(--star-color), var(--star-hover));
+}
+
+.StoreOwnerStatsValue {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.StoreOwnerStatsLabel {
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.StoreOwnerStatsChange {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.StoreOwnerStatsChange.positive {
+  color: var(--success-color);
+}
+
+.StoreOwnerStatsChange.negative {
+  color: var(--danger-color);
+}
+
+.StoreOwnerStatsChange.neutral {
+  color: var(--text-muted);
+}
+
+/* Ratings Section */
+.StoreOwnerRatingsSection {
+  margin-bottom: 2rem;
+}
+
+.StoreOwnerRatingsCard {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.StoreOwnerRatingsCard .card-header {
+  background-color: var(--background-light);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.25rem;
+}
+
+.StoreOwnerRatingsCard .card-header h5 {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.StoreOwnerRatingsCard .card-body {
+  padding: 0;
+}
+
+/* Rating Item */
+.StoreOwnerRatingItem {
+  padding: 1.25rem;
+  border-bottom: 1px solid var(--border-light);
+  transition: background-color 0.2s ease;
+}
+
+.StoreOwnerRatingItem:last-child {
+  border-bottom: none;
+}
+
+.StoreOwnerRatingItem:hover {
+  background-color: var(--background-light);
+}
+
+.StoreOwnerRatingAvatar {
+  width: 50px;
+  height: 50px;
+}
+
+.StoreOwnerRatingAvatar .bg-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover)) !important;
+}
+
+.StoreOwnerRatingUser {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.StoreOwnerRatingEmail {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.StoreOwnerRatingStars {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.StoreOwnerRatingStars .fa-star {
+  color: var(--star-color);
+  margin-right: 0.125rem;
+  font-size: 0.875rem;
+}
+
+.StoreOwnerRatingStars span {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.StoreOwnerRatingComment {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.StoreOwnerRatingDate {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.StoreOwnerRatingBadge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.StoreOwnerRatingBadge.excellent {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.StoreOwnerRatingBadge.good {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.StoreOwnerRatingBadge.average {
+  background-color: var(--warning-color);
+  color: white;
+}
+
+.StoreOwnerRatingBadge.poor {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+/* Empty State */
+.StoreOwnerRatingsEmpty {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.StoreOwnerRatingsEmpty .fa-star {
+  color: var(--text-light);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.StoreOwnerRatingsEmpty h5 {
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.StoreOwnerRatingsEmpty p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Loading State */
+.StoreOwnerDashboardLoading {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.StoreOwnerDashboardLoading .spinner-border {
+  color: var(--primary-color);
+}
+
+/* Error State */
+.StoreOwnerDashboardError {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Action Buttons */
+.StoreOwnerDashboardActions {
+  margin-bottom: 1.5rem;
+}
+
+.StoreOwnerDashboardActions .btn {
+  margin-right: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Charts Container */
+.StoreOwnerChartsSection {
+  margin-bottom: 2rem;
+}
+
+.StoreOwnerChartCard {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.StoreOwnerChartCard .card-header {
+  background-color: var(--background-light);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 1.25rem;
+}
+
+.StoreOwnerChartCard .card-header h6 {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.StoreOwnerChartCard .card-body {
+  padding: 1.25rem;
+}
+
+/* Recent Activity */
+.StoreOwnerRecentActivity {
+  margin-bottom: 2rem;
+}
+
+.StoreOwnerActivityCard {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.StoreOwnerActivityCard .card-header {
+  background-color: var(--background-light);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.25rem;
+}
+
+.StoreOwnerActivityCard .card-header h5 {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.StoreOwnerActivityItem {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border-light);
+  transition: background-color 0.2s ease;
+}
+
+.StoreOwnerActivityItem:last-child {
+  border-bottom: none;
+}
+
+.StoreOwnerActivityItem:hover {
+  background-color: var(--background-light);
+}
+
+.StoreOwnerActivityIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.StoreOwnerActivityIcon.rating {
+  background-color: var(--star-light);
+  color: var(--star-color);
+}
+
+.StoreOwnerActivityIcon.user {
+  background-color: var(--info-light);
+  color: var(--info-color);
+}
+
+.StoreOwnerActivityText {
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+}
+
+.StoreOwnerActivityDate {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .StoreOwnerDashboardHeader {
+    text-align: center;
+  }
+
+  .StoreOwnerDashboardHeader .d-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .StoreOwnerStatsCard .card-body {
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  .StoreOwnerStatsIcon {
+    margin: 0 auto 1rem auto;
+  }
+
+  .StoreOwnerStatsValue {
+    font-size: 2rem;
+  }
+
+  .StoreOwnerRatingsCard .card-header,
+  .StoreOwnerActivityCard .card-header,
+  .StoreOwnerChartCard .card-header {
+    padding: 1rem;
+  }
+
+  .StoreOwnerRatingItem,
+  .StoreOwnerActivityItem {
+    padding: 1rem;
+  }
+
+  .StoreOwnerRatingItem .d-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .StoreOwnerRatingAvatar {
+    margin: 0 auto 1rem auto;
+  }
+
+  .StoreOwnerDashboardActions {
+    text-align: center;
+  }
+
+  .StoreOwnerDashboardActions .btn {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .StoreOwnerDashboard {
+    padding: 0 0.5rem;
+  }
+
+  .StoreOwnerDashboardTitle {
+    font-size: 1.5rem;
+  }
+
+  .StoreOwnerStatsValue {
+    font-size: 1.75rem;
+  }
+
+  .StoreOwnerStatsIcon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .StoreOwnerRatingItem .row {
+    text-align: left;
+  }
+
+  .StoreOwnerRatingAvatar {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+  }
+
+  .StoreOwnerActivityIcon {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+    margin-right: 0.75rem;
+  }
+}
+
+/* Animation Enhancements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.StoreOwnerStatsCard {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.StoreOwnerStatsCard:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.StoreOwnerStatsCard:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.StoreOwnerStatsCard:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.StoreOwnerRatingItem {
+  animation: fadeInUp 0.4s ease-out;
+}
+
+.StoreOwnerRatingItem:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.StoreOwnerRatingItem:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.StoreOwnerStatsValue {
+  animation: countUp 0.8s ease-out 0.3s both;
+}
+
+/* Accessibility */
+.StoreOwnerStatsCard:focus-within {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.StoreOwnerRatingItem:focus-within {
+  background-color: var(--primary-light);
+  outline: 2px solid var(--primary-color);
+  outline-offset: -2px;
+}
+
+/* Print Styles */
+@media print {
+  .StoreOwnerDashboardActions {
+    display: none;
+  }
+
+  .StoreOwnerStatsCard,
+  .StoreOwnerRatingsCard,
+  .StoreOwnerActivityCard {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .StoreOwnerStatsCard:hover,
+  .StoreOwnerRatingItem:hover,
+  .StoreOwnerActivityItem:hover {
+    transform: none;
+    background-color: transparent;
+  }
+}

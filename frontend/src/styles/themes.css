@@ -1,0 +1,575 @@
+/* Global Reset for HTML and Body */
+html, body {
+  height: auto !important;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: auto !important;
+  min-height: 100vh;
+}
+
+/* Vamtam Global Theme Variables */
+:root {
+  --e-global-color-vamtam_accent_1: #010ED0;
+  --e-global-color-vamtam_accent_2: #F5F5F5;
+  --e-global-color-vamtam_accent_3: #5F6567;
+  --e-global-color-vamtam_accent_4: #DEE0FF;
+  --e-global-color-vamtam_accent_5: #FFFFFF;
+  --e-global-color-vamtam_accent_6: #242627;
+  --e-global-color-vamtam_accent_7: #00000026;
+  --e-global-color-vamtam_accent_8: #00000099;
+  --e-global-color-vamtam_sticky_header_bg_color: #010ED0;
+  --e-global-color-a9cf77f: #0A0D31;
+  --e-global-color-8a42445: #F5F5F1B3;
+  --e-global-color-ba6d9a8: #343434;
+  
+  /* Custom Color Variables */
+  --star-color: #010ED0;
+  --star-hover: #0c0fa8;
+  --primary-color: #010ED0;
+  --primary-dark: #0c0fa8;
+  --primary-hover: #0c0fa8;
+  --e-global-typography-vamtam_primary_font-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-vamtam_primary_font-font-size: 16px;
+  --e-global-typography-vamtam_primary_font-font-weight: 400;
+  --e-global-typography-vamtam_primary_font-text-transform: none;
+  --e-global-typography-vamtam_primary_font-font-style: normal;
+  --e-global-typography-vamtam_primary_font-line-height: 1.4em;
+  --e-global-typography-vamtam_primary_font-letter-spacing: 0px;
+  --e-global-typography-vamtam_primary_font-word-spacing: 0em;
+  --e-global-typography-vamtam_h1-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-vamtam_h1-font-size: 60px;
+  --e-global-typography-vamtam_h1-font-weight: 600;
+  --e-global-typography-vamtam_h1-text-transform: none;
+  --e-global-typography-vamtam_h1-font-style: normal;
+  --e-global-typography-vamtam_h1-line-height: 1em;
+  --e-global-typography-vamtam_h1-letter-spacing: -1px;
+  --e-global-typography-vamtam_h1-word-spacing: 0em;
+  --e-global-typography-vamtam_h2-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-vamtam_h2-font-size: 48px;
+  --e-global-typography-vamtam_h2-font-weight: 700;
+  --e-global-typography-vamtam_h2-text-transform: none;
+  --e-global-typography-vamtam_h2-font-style: normal;
+  --e-global-typography-vamtam_h2-line-height: 1.2em;
+  --e-global-typography-vamtam_h2-letter-spacing: 0px;
+  --e-global-typography-vamtam_h2-word-spacing: 0em;
+  --e-global-typography-vamtam_h3-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-vamtam_h3-font-size: 30px;
+  --e-global-typography-vamtam_h3-font-weight: 600;
+  --e-global-typography-vamtam_h3-text-transform: none;
+  --e-global-typography-vamtam_h3-font-style: normal;
+  --e-global-typography-vamtam_h3-line-height: 1.2em;
+  --e-global-typography-vamtam_h3-letter-spacing: 0px;
+  --e-global-typography-vamtam_h3-word-spacing: 0em;
+  --e-global-typography-vamtam_h4-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-vamtam_h4-font-size: 24px;
+  --e-global-typography-vamtam_h4-font-weight: 600;
+  --e-global-typography-vamtam_h4-text-transform: none;
+  --e-global-typography-vamtam_h4-font-style: normal;
+  --e-global-typography-vamtam_h4-line-height: 1.3em;
+  --e-global-typography-vamtam_h4-letter-spacing: 0px;
+  --e-global-typography-vamtam_h4-word-spacing: 0em;
+  --e-global-typography-vamtam_h5-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-vamtam_h5-font-size: 20px;
+  --e-global-typography-vamtam_h5-font-weight: 600;
+  --e-global-typography-vamtam_h5-text-transform: none;
+  --e-global-typography-vamtam_h5-font-style: normal;
+  --e-global-typography-vamtam_h5-line-height: 1.3em;
+  --e-global-typography-vamtam_h5-letter-spacing: 0px;
+  --e-global-typography-vamtam_h5-word-spacing: 0em;
+  --e-global-typography-vamtam_h6-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-vamtam_h6-font-size: 16px;
+  --e-global-typography-vamtam_h6-font-weight: 600;
+  --e-global-typography-vamtam_h6-text-transform: none;
+  --e-global-typography-vamtam_h6-font-style: normal;
+  --e-global-typography-vamtam_h6-line-height: 1.6em;
+  --e-global-typography-vamtam_h6-letter-spacing: 0px;
+  --e-global-typography-vamtam_h6-word-spacing: 0em;
+  --e-global-typography-2621617-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-2621617-font-size: 20px;
+  --e-global-typography-2621617-font-weight: 400;
+  --e-global-typography-2621617-text-transform: none;
+  --e-global-typography-2621617-font-style: normal;
+  --e-global-typography-2621617-line-height: 1.5em;
+  --e-global-typography-2621617-letter-spacing: 0px;
+  --e-global-typography-2621617-word-spacing: 0em;
+  --e-global-typography-0306bf1-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-0306bf1-font-size: 14px;
+  --e-global-typography-0306bf1-font-weight: 400;
+  --e-global-typography-0306bf1-text-transform: none;
+  --e-global-typography-0306bf1-font-style: normal;
+  --e-global-typography-0306bf1-line-height: 1.4em;
+  --e-global-typography-0306bf1-letter-spacing: 0px;
+  --e-global-typography-0306bf1-word-spacing: 0em;
+  --e-global-typography-8e8a58f-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-8e8a58f-font-size: 12px;
+  --e-global-typography-8e8a58f-font-weight: 400;
+  --e-global-typography-8e8a58f-text-transform: none;
+  --e-global-typography-8e8a58f-font-style: normal;
+  --e-global-typography-8e8a58f-line-height: 1.8em;
+  --e-global-typography-8e8a58f-letter-spacing: 0px;
+  --e-global-typography-8e8a58f-word-spacing: 0em;
+  --e-global-typography-8464352-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-8464352-font-size: 30px;
+  --e-global-typography-8464352-font-weight: 400;
+  --e-global-typography-8464352-text-transform: none;
+  --e-global-typography-8464352-font-style: normal;
+  --e-global-typography-8464352-line-height: 1.4em;
+  --e-global-typography-8464352-letter-spacing: 0px;
+  --e-global-typography-8464352-word-spacing: 0em;
+  --e-global-typography-f3d7635-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-f3d7635-font-size: 16px;
+  --e-global-typography-f3d7635-font-weight: 400;
+  --e-global-typography-f3d7635-line-height: 1.4em;
+  --e-global-typography-f3d7635-letter-spacing: 0px;
+  --e-global-typography-f3d7635-word-spacing: 0em;
+  --e-global-typography-be24d1a-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-be24d1a-font-size: 10px;
+  --e-global-typography-be24d1a-font-weight: 600;
+  --e-global-typography-be24d1a-text-transform: uppercase;
+  --e-global-typography-be24d1a-font-style: normal;
+  --e-global-typography-be24d1a-line-height: 1.7em;
+  --e-global-typography-be24d1a-letter-spacing: 1px;
+  --e-global-typography-be24d1a-word-spacing: 0em;
+  --e-global-typography-35e5858-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-35e5858-font-size: 16px;
+  --e-global-typography-35e5858-font-weight: 500;
+  --e-global-typography-35e5858-text-transform: none;
+  --e-global-typography-35e5858-font-style: normal;
+  --e-global-typography-35e5858-line-height: 1.2em;
+  --e-global-typography-35e5858-letter-spacing: 0px;
+  --e-global-typography-35e5858-word-spacing: 0em;
+  --e-global-typography-c3f4d00-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-c3f4d00-font-size: 12px;
+  --e-global-typography-c3f4d00-font-weight: 600;
+  --e-global-typography-c3f4d00-text-transform: none;
+  --e-global-typography-c3f4d00-font-style: normal;
+  --e-global-typography-c3f4d00-line-height: 1.3em;
+  --e-global-typography-c3f4d00-letter-spacing: 0px;
+  --e-global-typography-c3f4d00-word-spacing: 0em;
+  --e-global-typography-6ed87f1-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-6ed87f1-font-size: 14px;
+  --e-global-typography-6ed87f1-line-height: 1.4em;
+  --e-global-typography-4d7b2aa-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-4d7b2aa-font-size: 12px;
+  --e-global-typography-4d7b2aa-line-height: 1.3em;
+  --e-global-typography-67933a0-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-67933a0-font-size: 14px;
+  --e-global-typography-e41de06-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-e41de06-font-size: 14px;
+  --e-global-typography-e41de06-font-weight: 500;
+  --e-global-typography-e41de06-line-height: 1.5em;
+  --e-global-typography-e41de06-letter-spacing: 0px;
+  --e-global-typography-4448a67-font-family: "Source Sans Pro", sans-serif;
+  --e-global-typography-4448a67-font-size: 80px;
+  --e-global-typography-4448a67-font-weight: 600;
+  --e-global-typography-4448a67-text-transform: none;
+  --e-global-typography-4448a67-font-style: normal;
+  --e-global-typography-4448a67-line-height: 1.1em;
+  --e-global-typography-4448a67-letter-spacing: -1px;
+  color: var(--e-global-color-vamtam_accent_8);
+}
+
+/* Font Size Variables */
+:root[data-font-size="small"] {
+  --base-font-size: 0.875rem;
+  --h1-size: 2rem;
+  --h2-size: 1.75rem;
+  --h3-size: 1.5rem;
+  --h4-size: 1.25rem;
+  --h5-size: 1.125rem;
+  --h6-size: 1rem;
+}
+
+:root[data-font-size="medium"] {
+  --base-font-size: 1rem;
+  --h1-size: 2.5rem;
+  --h2-size: 2rem;
+  --h3-size: 1.75rem;
+  --h4-size: 1.5rem;
+  --h5-size: 1.25rem;
+  --h6-size: 1.125rem;
+}
+
+:root[data-font-size="large"] {
+  --base-font-size: 1.125rem;
+  --h1-size: 3rem;
+  --h2-size: 2.25rem;
+  --h3-size: 2rem;
+  --h4-size: 1.75rem;
+  --h5-size: 1.5rem;
+  --h6-size: 1.25rem;
+}
+
+:root[data-font-size="extra-large"] {
+  --base-font-size: 1.25rem;
+  --h1-size: 3.5rem;
+  --h2-size: 2.75rem;
+  --h3-size: 2.25rem;
+  --h4-size: 2rem;
+  --h5-size: 1.75rem;
+  --h6-size: 1.5rem;
+}
+
+/* Base Styles */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: var(--base-font-size);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 { font-size: var(--h1-size); }
+h2 { font-size: var(--h2-size); }
+h3 { font-size: var(--h3-size); }
+h4 { font-size: var(--h4-size); }
+h5 { font-size: var(--h5-size); }
+h6 { font-size: var(--h6-size); }
+
+/* Cards */
+.card {
+  background-color: var(--bg-primary);
+  border-color: var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.card-header {
+  background-color: var(--bg-secondary);
+  border-bottom-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.card-footer {
+  background-color: var(--bg-secondary);
+  border-top-color: var(--border-color);
+  color: var(--text-secondary);
+}
+
+/* Forms */
+.form-control {
+  background-color: var(--bg-primary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.form-control:focus {
+  background-color: var(--bg-primary);
+  border-color: var(--primary-color);
+  color: var(--text-primary);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-select {
+  background-color: var(--bg-primary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.form-label {
+  color: var(--text-primary);
+}
+
+/* Buttons */
+.btn {
+  transition: all 0.3s ease;
+}
+
+/* Tables */
+.table {
+  color: var(--text-primary);
+}
+
+.table th {
+  border-top-color: var(--border-color);
+  border-bottom-color: var(--border-color);
+}
+
+.table td {
+  border-top-color: var(--border-color);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: var(--bg-secondary);
+}
+
+/* Navigation */
+.navbar {
+  background-color: var(--bg-primary);
+  border-color: var(--border-color);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: var(--text-primary);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: var(--bg-secondary);
+  border-right: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav-link {
+  color: var(--text-secondary);
+  border-radius: 0.375rem;
+  margin: 0.125rem 0;
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.sidebar .nav-link.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Alerts */
+.alert {
+  border-color: var(--border-color);
+}
+
+/* Modals */
+.modal-content {
+  background-color: #ffffff !important;
+  border-color: var(--border-color);
+}
+
+.modal-header {
+  background-color: #ffffff !important;
+  border-bottom-color: var(--border-color);
+}
+
+.modal-body {
+  background-color: #ffffff !important;
+}
+
+.modal-footer {
+  background-color: #ffffff !important;
+  border-top-color: var(--border-color);
+}
+
+/* Global Bootstrap Modal Styles - Ensure all modals have white background */
+.modal .modal-content {
+  background-color: #ffffff !important;
+}
+
+.modal .modal-header {
+  background-color: #ffffff !important;
+}
+
+.modal .modal-body {
+  background-color: #ffffff !important;
+}
+
+.modal .modal-footer {
+  background-color: #ffffff !important;
+}
+
+/* Override any theme-based modal backgrounds */
+.modal-content,
+.modal-header,
+.modal-body,
+.modal-footer {
+  background-color: #ffffff !important;
+}
+
+/* Dropdowns */
+.dropdown-menu {
+  background-color: var(--bg-primary);
+  border-color: var(--border-color);
+  box-shadow: var(--shadow);
+}
+
+.dropdown-item {
+  color: var(--text-primary);
+}
+
+.dropdown-item:hover {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+/* Tooltips */
+.tooltip-inner {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+/* High Contrast Mode */
+.high-contrast {
+  --primary-color: #000080;
+  --secondary-color: #404040;
+  --success-color: #008000;
+  --danger-color: #800000;
+  --warning-color: #808000;
+  --info-color: #008080;
+  
+  --bg-primary: #ffffff;
+  --bg-secondary: #f0f0f0;
+  --bg-tertiary: #e0e0e0;
+  
+  --text-primary: #000000;
+  --text-secondary: #404040;
+  --text-muted: #606060;
+  
+  --border-color: #000000;
+  --border-light: #404040;
+}
+
+.high-contrast[data-theme="dark"] {
+  --bg-primary: #000000;
+  --bg-secondary: #1a1a1a;
+  --bg-tertiary: #2a2a2a;
+  
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-muted: #aaaaaa;
+  
+  --border-color: #ffffff;
+  --border-light: #cccccc;
+}
+
+/* Reduced Motion */
+.reduce-motion,
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* Loading Spinner */
+.loading-container {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.loading-spinner {
+  color: var(--primary-color);
+}
+
+/* Error Boundary */
+.error-boundary-container {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.error-boundary-card {
+  border-color: var(--danger-color);
+}
+
+/* Toast Notifications */
+.custom-toast-container {
+  font-size: var(--base-font-size);
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.theme-toggle:hover {
+  background-color: var(--bg-secondary);
+}
+
+/* Storage Manager */
+.storage-stat {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.storage-key {
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+}
+
+/* User Preferences */
+.preference-section {
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 1rem;
+}
+
+.preference-section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.preference-section-title {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  :root {
+    --base-font-size: 0.9rem;
+  }
+  
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  
+  .sidebar.show {
+    transform: translateX(0);
+  }
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  .sidebar,
+  .navbar,
+  .btn,
+  .alert {
+    display: none !important;
+  }
+}
+
+/* Focus Styles for Accessibility */
+.form-control:focus,
+.btn:focus,
+.nav-link:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

@@ -1,0 +1,133 @@
+/* Responsive DashboardHeader */
+.DashboardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-bottom: 2px solid var(--e-global-color-vamtam_accent_4);
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 991.98px) {
+  .DashboardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .DashboardHeader {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .DashboardTitle {
+    font-size: 1.25rem !important;
+  }
+  .DashboardSubtitle {
+    font-size: 0.95rem !important;
+  }
+}
+/* Dashboard Component Styles */
+
+
+/* Modernized Dashboard Styles with Vamtam Theme */
+.DashboardStatCard {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 1.5rem;
+  background: var(--e-global-color-vamtam_accent_5);
+  border: 2px solid var(--e-global-color-vamtam_accent_4);
+  box-shadow: 0 2px 12px var(--e-global-color-vamtam_accent_7);
+}
+.DashboardStatCard:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 6px 20px var(--e-global-color-vamtam_accent_7) !important;
+}
+.DashboardStatIcon {
+  background: linear-gradient(135deg, var(--e-global-color-vamtam_accent_1) 0%, var(--e-global-color-vamtam_accent_4) 100%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--e-global-color-vamtam_accent_5);
+  box-shadow: 0 2px 8px var(--e-global-color-vamtam_accent_7);
+}
+.DashboardQuickAction {
+  transition: all 0.2s;
+  cursor: pointer;
+  text-decoration: none !important;
+  border-radius: 1.25rem;
+  background: var(--e-global-color-vamtam_accent_2);
+  border: 2px solid var(--e-global-color-vamtam_accent_4);
+  box-shadow: 0 2px 8px var(--e-global-color-vamtam_accent_7);
+}
+.DashboardQuickAction:hover {
+  background: linear-gradient(135deg, var(--e-global-color-vamtam_accent_4) 0%, var(--e-global-color-vamtam_accent_2) 100%);
+  border-color: var(--e-global-color-vamtam_accent_1) !important;
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: 0 4px 16px var(--e-global-color-vamtam_accent_7);
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 16px var(--e-global-color-vamtam_accent_7) !important;
+}
+.hover-bg-light:hover {
+  background: var(--e-global-color-vamtam_accent_4) !important;
+  border-radius: 0.75rem;
+}
+.DashboardActivityIcon {
+  transition: all 0.2s;
+}
+.DashboardActivityItem:hover .DashboardActivityIcon {
+  transform: scale(1.1);
+}
+.DashboardLoading {
+  min-height: 400px;
+}
+.DashboardError {
+  border-left: 4px solid var(--e-global-color-vamtam_accent_1);
+}
+
+/* Responsive: Mobile & Tablet */
+@media (max-width: 991.98px) {
+  .DashboardStatCard {
+    margin-bottom: 1.25rem;
+  }
+  .DashboardQuickAction {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 1.25rem 1rem !important;
+    min-height: 120px;
+  }
+  .DashboardQuickActionIcon {
+    margin-bottom: 0.75rem !important;
+    margin-right: 0 !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .DashboardStatCard {
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding: 1rem 0.5rem;
+  }
+  .DashboardQuickAction {
+    padding: 1rem 0.5rem !important;
+    border-radius: 1rem;
+  }
+  .DashboardQuickActionIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  .DashboardQuickActionTitle {
+    font-size: 1rem !important;
+  }
+}

@@ -1,0 +1,401 @@
+/* Registration Component Styles */
+.RegistrationContainer {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--background-primary) 100%);
+  padding: 2rem 0;
+}
+
+/* Registration Card */
+.RegistrationCard {
+  border: none;
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.RegistrationCard .card-body {
+  padding: 2rem;
+}
+
+/* Header */
+.RegistrationHeader {
+  margin-bottom: 2rem;
+}
+
+.RegistrationIcon {
+  display: inline-block;
+  padding: 1rem;
+  background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.RegistrationTitle {
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.RegistrationSubtitle {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Form Elements */
+.RegistrationContainer .form-label {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.RegistrationContainer .form-label .fa {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.RegistrationContainer .form-control {
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background-color: var(--background-secondary);
+}
+
+.RegistrationContainer .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.125rem rgba(76, 175, 80, 0.25);
+  background-color: white;
+}
+
+.RegistrationContainer .form-control.is-invalid {
+  border-color: var(--danger-color);
+  box-shadow: 0 0 0 0.125rem rgba(244, 67, 54, 0.25);
+}
+
+.RegistrationContainer .form-control::placeholder {
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.RegistrationContainer .form-text {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+.RegistrationContainer .invalid-feedback {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+/* Password Toggle */
+.PasswordToggle {
+  border-left: none;
+  background-color: var(--background-light);
+  border-color: var(--border-color);
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+}
+
+.PasswordToggle:hover {
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.PasswordToggle:focus {
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+
+/* Password Strength Indicator */
+.PasswordStrength {
+  margin-top: 0.5rem;
+}
+
+.PasswordStrengthBar {
+  width: 100%;
+  height: 6px;
+  background-color: var(--border-light);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.PasswordStrengthFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.PasswordStrengthFill.strength-1 {
+  background-color: var(--danger-color);
+  width: 25%;
+}
+
+.PasswordStrengthFill.strength-2 {
+  background-color: var(--warning-color);
+  width: 50%;
+}
+
+.PasswordStrengthFill.strength-3 {
+  background-color: var(--info-color);
+  width: 75%;
+}
+
+.PasswordStrengthFill.strength-4 {
+  background-color: var(--success-color);
+  width: 100%;
+}
+
+/* Submit Button */
+.RegistrationSubmitBtn {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.875rem 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: none;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+  transition: all 0.3s ease;
+}
+
+.RegistrationSubmitBtn:hover {
+  background: linear-gradient(135deg, var(--primary-hover), var(--primary-dark));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(76, 175, 80, 0.4);
+}
+
+.RegistrationSubmitBtn:disabled {
+  background: var(--background-light);
+  color: var(--text-muted);
+  transform: none;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.RegistrationSubmitBtn:disabled:hover {
+  background: var(--background-light);
+  color: var(--text-muted);
+  transform: none;
+  box-shadow: none;
+}
+
+/* Footer */
+.RegistrationFooter {
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.RegistrationLoginLink {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.RegistrationLoginLink:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+/* Input Group Styling */
+.RegistrationContainer .input-group .form-control {
+  border-right: none;
+}
+
+.RegistrationContainer .input-group .form-control:focus {
+  border-right: none;
+}
+
+.RegistrationContainer .input-group .form-control:focus + .PasswordToggle {
+  border-color: var(--primary-color);
+}
+
+.RegistrationContainer .input-group .form-control.is-invalid + .PasswordToggle {
+  border-color: var(--danger-color);
+}
+
+/* Character Counter */
+.RegistrationContainer .form-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.RegistrationContainer .form-text.over-limit {
+  color: var(--danger-color);
+}
+
+/* Animation Enhancements */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.RegistrationCard {
+  animation: slideInUp 0.6s ease-out;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+  }
+  50% {
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.5);
+  }
+  100% {
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+  }
+}
+
+.RegistrationIcon {
+  animation: pulse 2s infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .RegistrationContainer {
+    padding: 1rem 0;
+  }
+
+  .RegistrationCard .card-body {
+    padding: 1.5rem;
+  }
+
+  .RegistrationHeader {
+    margin-bottom: 1.5rem;
+  }
+
+  .RegistrationTitle {
+    font-size: 1.5rem;
+  }
+
+  .RegistrationSubtitle {
+    font-size: 0.9rem;
+  }
+
+  .RegistrationContainer .form-control {
+    padding: 0.625rem 0.875rem;
+    font-size: 0.9rem;
+  }
+
+  .RegistrationSubmitBtn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .RegistrationContainer {
+    padding: 0.5rem;
+  }
+
+  .RegistrationCard .card-body {
+    padding: 1.25rem;
+  }
+
+  .RegistrationIcon {
+    padding: 0.75rem;
+  }
+
+  .RegistrationTitle {
+    font-size: 1.25rem;
+  }
+
+  .RegistrationContainer .form-control {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  .PasswordToggle {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .RegistrationSubmitBtn {
+    padding: 0.625rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .RegistrationContainer .form-label {
+    font-size: 0.9rem;
+  }
+
+  .RegistrationContainer .form-text {
+    font-size: 0.75rem;
+  }
+}
+
+/* Focus Styles for Accessibility */
+.RegistrationContainer .form-control:focus {
+  outline: none;
+}
+
+.PasswordToggle:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.RegistrationSubmitBtn:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.RegistrationLoginLink:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .RegistrationCard {
+    border: 2px solid var(--text-primary);
+    background-color: white;
+  }
+
+  .RegistrationContainer .form-control {
+    border-width: 2px;
+    background-color: white;
+  }
+
+  .PasswordStrengthBar {
+    border: 1px solid var(--text-primary);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .RegistrationContainer {
+    background: white;
+    padding: 0;
+  }
+
+  .RegistrationCard {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .PasswordToggle {
+    display: none;
+  }
+
+  .RegistrationSubmitBtn {
+    background: #4CAF50 !important;
+    color: white !important;
+    box-shadow: none;
+  }
+}

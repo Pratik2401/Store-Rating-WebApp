@@ -1,0 +1,121 @@
+/* Login Page Styles */
+
+.LoginPageContainer {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 0;
+}
+
+.LoginPageContainerFluid {
+  padding: 0;
+}
+
+.LoginPageRow {
+  margin: 0;
+  padding: 1rem;
+}
+
+.LoginPageCol {
+  max-width: 100%;
+}
+
+.LoginCard {
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.LoginIcon {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  width: 60px;
+  height: 60px;
+}
+
+.LoginEmailInputContainer,
+.LoginPasswordInputContainer {
+  height: 48px;
+}
+
+.LoginEmailInputContainer .LoginEmailIcon,
+.LoginPasswordInputContainer .LoginPasswordIcon {
+  z-index: 10;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+}
+
+.LoginPasswordToggle {
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: none;
+  border: none;
+  color: #6c757d;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.LoginPasswordToggle:focus {
+  box-shadow: none;
+}
+
+.LoginButton {
+  height: 48px;
+}
+
+.LoginDemoCard {
+  background-color: #f8f9fa;
+  transition: all 0.2s ease;
+}
+
+.LoginDemoCard:hover {
+  background-color: #e9ecef;
+  transform: translateY(-1px);
+}
+
+/* Login Page Mobile Responsive */
+@media (max-width: 575.98px) {
+  .LoginPageRow {
+    padding: 0.5rem;
+  }
+  
+  .LoginCardBody {
+    padding: 1.5rem !important;
+  }
+  
+  .LoginTitle {
+    font-size: 1.5rem !important;
+  }
+  
+  .LoginDemoCredentials .row {
+    gap: 0.5rem;
+  }
+  
+  .LoginDemoCard {
+    padding: 0.5rem !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .LoginCardBody {
+    padding: 2rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .LoginPageCol {
+    max-width: 400px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .LoginDemoSection {
+    display: none !important;
+  }
+}

@@ -1,0 +1,68 @@
+/* StoreOwner Analytics styles */
+
+.StoreOwnerAnalyticsContainer {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.StoreOwnerAnalyticsContainer .card {
+  border: none;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.StoreOwnerAnalyticsContainer .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.StoreOwnerAnalyticsContainer .progress {
+  border-radius: 4px;
+  background-color: #e9ecef;
+}
+
+.StoreOwnerAnalyticsContainer .progress-bar {
+  border-radius: 4px;
+}
+
+.StoreOwnerAnalyticsContainer .card-header {
+  background-color: #f8f9fa !important;
+  border-bottom: 1px solid #dee2e6;
+  font-weight: 600;
+}
+
+.StoreOwnerAnalyticsContainer .rounded-circle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Chart Container */
+.StoreOwnerAnalyticsContainer .chart-container {
+  position: relative;
+  height: 300px;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .StoreOwnerAnalyticsContainer h1 {
+    font-size: 1.5rem;
+  }
+  
+  .StoreOwnerAnalyticsContainer h3 {
+    font-size: 1.25rem;
+  }
+  
+  .StoreOwnerAnalyticsContainer .rounded-circle {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .StoreOwnerAnalyticsContainer .chart-container {
+    height: 200px;
+  }
+}

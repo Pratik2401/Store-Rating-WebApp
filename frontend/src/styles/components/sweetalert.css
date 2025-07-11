@@ -1,0 +1,38 @@
+/* SweetAlert2 Custom Styles */
+
+.SweetAlertContainer {
+  z-index: 9999;
+}
+
+.SweetAlertPopup {
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.SweetAlertTitle {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.SweetAlertConfirmButton {
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+}
+
+.SweetAlertCancelButton {
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+}
+
+.SweetAlertDenyButton {
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+}
+
+.SweetAlertToast {
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}

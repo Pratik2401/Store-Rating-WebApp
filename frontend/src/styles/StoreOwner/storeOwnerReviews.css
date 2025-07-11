@@ -1,0 +1,61 @@
+/* StoreOwner Reviews styles */
+
+.StoreOwnerReviewsContainer {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.StoreOwnerReviewsContainer .card {
+  border: none;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.StoreOwnerReviewsContainer .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.StoreOwnerReviewsContainer .btn {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.StoreOwnerReviewsContainer .table {
+  font-size: 0.9rem;
+}
+
+.StoreOwnerReviewsContainer .table th {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+}
+
+.StoreOwnerReviewsContainer .table td {
+  vertical-align: middle;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.StoreOwnerReviewsContainer .table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .StoreOwnerReviewsContainer h1 {
+    font-size: 1.5rem;
+  }
+  
+  .StoreOwnerReviewsContainer .table {
+    font-size: 0.8rem;
+  }
+  
+  .StoreOwnerReviewsContainer .btn {
+    font-size: 0.8rem;
+  }
+}

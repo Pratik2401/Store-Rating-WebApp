@@ -1,0 +1,130 @@
+/* SystemAdmin Layout Styles */
+.AdminDashboardContainer {
+  min-height: 100vh;
+  background: #f4f6fa;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.AdminLayoutRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.AdminSidebarContainer {
+  flex: 0 0 280px;
+  width: 280px;
+  min-height: 100vh;
+  background-color: var(--background-secondary);
+  border-right: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1000;
+  flex-shrink: 0;
+}
+
+.AdminSidebarContainer.collapsed {
+  width: 70px;
+}
+
+.AdminSidebarContainer.open {
+  transform: translateX(0);
+}
+
+.AdminMainColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 100vh;
+}
+
+.AdminNavbarRow {
+  width: 100%;
+  flex-shrink: 0;
+  z-index: 1040;
+}
+
+.AdminNavbarRow.hide-when-sidebar-open {
+  display: flex;
+}
+
+.AdminMainContent {
+  flex: 1;
+  background-color: var(--background-primary);
+  overflow-x: hidden;
+}
+
+.AdminMainContent.sidebar-collapsed {
+  margin-left: 0;
+}
+
+.AdminMainContainer {
+  padding: 1.5rem;
+  max-width: 100%;
+}
+
+/* Mobile Overlay */
+.admin-sidebar-mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1049;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.admin-sidebar-mobile-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+  .AdminLayoutRow {
+    flex-direction: column;
+    min-width: 0;
+    width: 100%;
+  }
+  
+  .AdminSidebarContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1050;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .AdminSidebarContainer.open {
+    transform: translateX(0);
+  }
+  
+  .AdminMainColumn {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+  }
+  
+  .AdminNavbarRow.hide-when-sidebar-open {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .AdminMainContainer {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .AdminMainContainer {
+    padding: 0.5rem;
+  }
+}

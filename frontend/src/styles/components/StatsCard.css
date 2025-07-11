@@ -1,0 +1,313 @@
+/* Stats Card Component Styles */
+.StatsCard {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+  background-color: var(--background-secondary);
+}
+
+.StatsCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.StatsCard.clickable:hover {
+  border-color: var(--primary-light);
+  cursor: pointer;
+}
+
+/* Card Body */
+.StatsCardBody {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Icon */
+.StatsCardIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.StatsCardIcon.primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+  color: white;
+}
+
+.StatsCardIcon.secondary {
+  background: linear-gradient(135deg, var(--secondary-color), var(--secondary-hover));
+  color: white;
+}
+
+.StatsCardIcon.success {
+  background: linear-gradient(135deg, var(--success-color), var(--success-hover));
+  color: white;
+}
+
+.StatsCardIcon.warning {
+  background: linear-gradient(135deg, var(--warning-color), var(--warning-hover));
+  color: white;
+}
+
+.StatsCardIcon.danger {
+  background: linear-gradient(135deg, var(--danger-color), var(--danger-hover));
+  color: white;
+}
+
+.StatsCardIcon.info {
+  background: linear-gradient(135deg, var(--info-color), var(--info-hover));
+  color: white;
+}
+
+.StatsCardIcon.star {
+  background: linear-gradient(135deg, var(--star-color), var(--star-hover));
+  color: white;
+}
+
+.StatsCardIconComponent {
+  font-size: 1.5rem;
+}
+
+/* Content */
+.StatsCardContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.StatsCardValue {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  word-break: break-word;
+}
+
+.StatsCardTitle {
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+/* Trend */
+.StatsCardTrend {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.TrendIcon {
+  font-size: 0.75rem;
+}
+
+.TrendValue {
+  margin-left: 0.25rem;
+}
+
+/* Card Variants */
+.StatsCard.highlighted {
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);
+}
+
+.StatsCard.compact .StatsCardBody {
+  padding: 1.25rem;
+}
+
+.StatsCard.compact .StatsCardIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.StatsCard.compact .StatsCardIconComponent {
+  font-size: 1.25rem;
+}
+
+.StatsCard.compact .StatsCardValue {
+  font-size: 1.75rem;
+}
+
+.StatsCard.large .StatsCardBody {
+  padding: 2rem;
+}
+
+.StatsCard.large .StatsCardIcon {
+  width: 70px;
+  height: 70px;
+}
+
+.StatsCard.large .StatsCardIconComponent {
+  font-size: 1.75rem;
+}
+
+.StatsCard.large .StatsCardValue {
+  font-size: 2.75rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .StatsCardBody {
+    padding: 1.25rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .StatsCardIcon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .StatsCardIconComponent {
+    font-size: 1.25rem;
+  }
+
+  .StatsCardValue {
+    font-size: 1.875rem;
+  }
+
+  .StatsCardTitle {
+    font-size: 0.9rem;
+  }
+
+  .StatsCardTrend {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .StatsCardBody {
+    padding: 1rem;
+  }
+
+  .StatsCardValue {
+    font-size: 1.5rem;
+  }
+
+  .StatsCardTitle {
+    font-size: 0.85rem;
+  }
+
+  .StatsCardIcon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .StatsCardIconComponent {
+    font-size: 1.1rem;
+  }
+}
+
+/* Animation Enhancements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.StatsCard {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.StatsCard:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.StatsCard:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.StatsCard:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.StatsCardValue {
+  animation: countUp 0.8s ease-out 0.3s both;
+}
+
+/* Loading State */
+.StatsCard.loading .StatsCardValue {
+  opacity: 0.6;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Accessibility */
+.StatsCard.clickable:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.StatsCard.clickable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .StatsCard {
+    border-width: 2px;
+  }
+
+  .StatsCardIcon {
+    border: 2px solid var(--text-primary);
+  }
+
+  .StatsCardValue {
+    color: var(--text-primary);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .StatsCard {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .StatsCard:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .StatsCardIcon {
+    background: #f5f5f5 !important;
+    color: #333 !important;
+  }
+}

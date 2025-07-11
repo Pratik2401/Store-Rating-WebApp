@@ -1,0 +1,36 @@
+/* LayoutCommon.css - Shared layout styles for Admin, StoreOwner, and User dashboards */
+
+.DashboardContainer {
+  min-height: 100vh;
+  background: #f4f6fa;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+.LayoutRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: auto; /* Changed from 100vh to auto to allow content expansion */
+}
+.MainColumn {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+@media (max-width: 991.98px) {
+  .LayoutRow {
+    flex-direction: column;
+    min-width: 0;
+    width: 100vw;
+    min-height: auto; /* Changed from 100vh to auto */
+  }
+  .MainColumn {
+    width: 100vw;
+    min-width: 0;
+    margin-left: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}

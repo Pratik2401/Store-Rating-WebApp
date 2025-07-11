@@ -1,0 +1,179 @@
+/* User Details Page Styles */
+.UserDetailsPage {
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.UserDetailsCard {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.UserDetailsCard .card-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-bottom: none;
+  padding: 1rem 1.25rem;
+  border-radius: 8px 8px 0 0;
+}
+
+.UserDetailsCard .card-header h5 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.UserDetailsCard .card-body {
+  padding: 1.5rem;
+}
+
+/* User Detail Items */
+.UserDetailItem {
+  margin-bottom: 1rem;
+}
+
+.UserDetailItem label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.UserDetailValue {
+  font-size: 1rem;
+  color: #495057;
+  font-weight: 500;
+  min-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  word-break: break-word;
+}
+
+.UserDetailValue .text-muted {
+  font-size: 0.875rem;
+}
+
+/* Role Badge */
+.UserRoleBadge {
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* User Statistics */
+.UserStatItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.UserStatItem:last-child {
+  border-bottom: none;
+}
+
+.StatLabel {
+  font-size: 0.875rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.StatValue {
+  font-size: 1rem;
+  color: #495057;
+  font-weight: 600;
+}
+
+/* Quick Actions */
+.UserDetailsCard .btn {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.UserDetailsCard .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .UserDetailsPage {
+    padding: 0 0.5rem;
+  }
+  
+  .UserDetailsCard .card-body {
+    padding: 1rem;
+  }
+  
+  .UserDetailItem {
+    margin-bottom: 1.5rem;
+  }
+  
+  .UserDetailValue {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .UserDetailsCard .card-header h5 {
+    font-size: 1rem;
+  }
+  
+  .UserDetailItem label {
+    font-size: 0.75rem;
+  }
+  
+  .UserDetailValue {
+    font-size: 0.875rem;
+  }
+}
+
+/* Loading and Error States */
+.UserDetailsPage .spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+.UserDetailsPage .alert {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation */
+.UserDetailsCard {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .UserDetailsCard .card-header {
+    background: #f8f9fa !important;
+    color: #333 !important;
+  }
+  
+  .UserDetailsCard .btn {
+    display: none !important;
+  }
+}

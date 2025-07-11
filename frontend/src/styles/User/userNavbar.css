@@ -1,0 +1,164 @@
+/* User Navbar Styles */
+.UserNavbarOuter {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.UserNavbar {
+  background-color: #fff !important;
+  border-bottom: 1px solid #dee2e6;
+  padding: 0.75rem 1rem;
+  min-height: 60px;
+}
+
+.UserSidebarToggle {
+  background-color: transparent;
+  border: none;
+  color: #6c757d;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+
+.UserSidebarToggle:hover {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+.UserNavbarBrand {
+  font-weight: 600;
+  color: #495057;
+  font-size: 1.1rem;
+}
+
+.UserNavRight {
+  gap: 1rem;
+}
+
+.UserUserDropdown .dropdown-toggle {
+  border: none;
+  background: transparent;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.UserUserDropdown .dropdown-toggle::after {
+  display: none;
+}
+
+.UserUserDropdown .dropdown-toggle:hover {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+.UserUserDropdownTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.UserUserIcon {
+  font-size: 1rem;
+}
+
+.UserUserDropdown .dropdown-menu {
+  border: 1px solid #dee2e6;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 0.375rem;
+  min-width: 200px;
+}
+
+.UserUserDropdownItem {
+  padding: 0.75rem 1rem;
+  border: none;
+  background: none;
+}
+
+.UserUserInfo {
+  text-align: start;
+}
+
+.UserUserName {
+  color: #495057;
+  margin-bottom: 0.25rem;
+}
+
+.UserUserEmail {
+  color: #6c757d;
+  margin-bottom: 0.25rem;
+}
+
+.UserRoleBadge {
+  background-color: #28a745 !important;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.UserLogoutItem {
+  color: #dc3545 !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.UserLogoutItem:hover {
+  background-color: #f8f9fa;
+  color: #dc3545 !important;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991.98px) {
+  .UserNavbarOuter.hide-on-mobile {
+    display: none;
+  }
+  
+  .UserSidebarToggle {
+    font-size: 1.5rem;
+    padding: 0.75rem;
+  }
+  
+  .UserNavbarBrand {
+    font-size: 1rem;
+  }
+}
+
+/* Navbar color overrides */
+.navbar-user-color {
+  color: #6c757d !important;
+}
+
+.navbar-usericon-color {
+  color: #6c757d !important;
+}
+
+.navbar-username-color {
+  color: #495057 !important;
+}
+
+.navbar-useremail-color {
+  color: #6c757d !important;
+}
+
+.navbar-rolebadge-color {
+  background-color: #28a745 !important;
+  color: white !important;
+}
+
+.navbar-white-bg {
+  background-color: #fff !important;
+}
+
+.vamtam-navbar {
+  background-color: #fff !important;
+}
+
+.vamtam-navbar-toggle {
+  border: none !important;
+  background-color: transparent !important;
+}
