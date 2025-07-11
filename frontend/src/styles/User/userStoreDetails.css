@@ -1,17 +1,10 @@
-/* Store Details Component Styles */
 
-/* ==========================================
-   Main Container & Layout
-   ========================================== */
 .store-details-container {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   min-height: 100vh;
   padding: 1rem;
 }
 
-/* ==========================================
-   Header Section
-   ========================================== */
 .store-header-card {
   border: none;
   border-radius: 20px;
@@ -36,7 +29,6 @@
   padding: 2rem;
 }
 
-/* Store Avatar */
 .StoreDetailsAvatar {
   background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
   width: 80px;
@@ -52,7 +44,6 @@
   margin-bottom: 1rem;
 }
 
-/* Store Title & Info */
 .store-title {
   font-size: 2rem;
   font-weight: 700;
@@ -71,7 +62,6 @@
   margin-bottom: 1.5rem;
 }
 
-/* Status Badge */
 .StoreDetailsStatusBadge {
   font-size: 0.875rem;
   padding: 0.5rem 1rem;
@@ -97,9 +87,6 @@
   box-shadow: 0 2px 8px rgba(108, 117, 125, 0.3);
 }
 
-/* ==========================================
-   Rating Section
-   ========================================== */
 .average-rating-section {
   display: flex;
   align-items: center;
@@ -130,7 +117,6 @@
   font-weight: 500;
 }
 
-/* Star Rating Styles */
 .store-details .star-rating {
   display: flex;
   align-items: center;
@@ -152,7 +138,6 @@
   filter: drop-shadow(0 2px 4px rgba(0, 123, 255, 0.3));
 }
 
-/* Display stars (non-interactive) */
 .store-details .d-flex .fa-star,
 .d-flex svg {
   font-size: 1rem;
@@ -169,7 +154,6 @@
   filter: drop-shadow(0 1px 2px rgba(0, 123, 255, 0.3));
 }
 
-/* Interactive Stars for Rating Modal */
 .interactive-star {
   cursor: pointer !important;
   transition: all 0.3s ease;
@@ -192,9 +176,6 @@
   filter: drop-shadow(0 2px 4px rgba(0, 123, 255, 0.4));
 }
 
-/* ==========================================
-   Cards & Content Sections
-   ========================================== */
 .store-info-card {
   border: none;
   border-radius: 20px;
@@ -228,9 +209,6 @@
   padding: 2rem;
 }
 
-/* ==========================================
-   User Rating Section
-   ========================================== */
 .user-rating-card {
   background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
   border: 2px solid #2196f3;
@@ -270,16 +248,12 @@
   font-weight: 500;
 }
 
-/* ==========================================
-   Recent Ratings List
-   ========================================== */
 .recent-ratings-list {
   max-height: 500px;
   overflow-y: auto;
   padding-right: 0.5rem;
 }
 
-/* Custom Scrollbar */
 .recent-ratings-list::-webkit-scrollbar {
   width: 6px;
 }
@@ -409,9 +383,6 @@
   border-left: 3px solid #007bff;
 }
 
-/* ==========================================
-   Buttons
-   ========================================== */
 .btn-primary {
   background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
   border: none;
@@ -452,9 +423,6 @@
   box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
 }
 
-/* ==========================================
-   Rating Modal Styles
-   ========================================== */
 .rating-modal .modal-content {
   background-color: #ffffff !important;
   border: none;
@@ -508,9 +476,6 @@
   border-radius: 15px;
 }
 
-/* ==========================================
-   Loading States
-   ========================================== */
 .StoreDetailsLoading {
   min-height: 400px;
   display: flex;
@@ -534,9 +499,6 @@
   100% { transform: rotate(360deg); }
 }
 
-/* ==========================================
-   Mobile Responsiveness
-   ========================================== */
 @media (max-width: 768px) {
   .store-details-container {
     padding: 0.5rem;
@@ -622,9 +584,6 @@
   }
 }
 
-/* ==========================================
-   Accessibility & Focus States
-   ========================================== */
 .interactive-star:focus,
 .btn:focus,
 .modal .btn-close:focus {
@@ -632,9 +591,6 @@
   outline-offset: 2px;
 }
 
-/* ==========================================
-   Additional Enhancements
-   ========================================== */
 .fade-in {
   animation: fadeIn 0.5s ease-in;
 }
@@ -653,9 +609,6 @@
   to { transform: translateY(0); opacity: 1; }
 }
 
-/* ==========================================
-   Contact Information
-   ========================================== */
 .StoreDetailsContact .d-flex {
   padding: 0.75rem;
   border-radius: 10px;
@@ -681,9 +634,6 @@
   color: #007bff;
 }
 
-/* ==========================================
-   Store Image
-   ========================================== */
 .store-header-card .card-img-top {
   height: 250px;
   object-fit: cover;

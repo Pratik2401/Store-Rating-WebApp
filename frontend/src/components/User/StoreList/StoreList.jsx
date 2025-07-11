@@ -4,7 +4,7 @@ import { Row, Col, Card, Form, InputGroup, Button, Badge, Alert, Spinner, Pagina
 import { useNavigate } from 'react-router-dom'
 import userAPI from '../../../api/User/userAPI'
 import { showSuccessAlert, showErrorAlert } from '../../../utils/SweetAlert'
-import '../../../styles/components/StoreList.css'
+import '../../../styles/User/StoreList.css'
 
 const StoreList = () => {
   const [stores, setStores] = useState([])

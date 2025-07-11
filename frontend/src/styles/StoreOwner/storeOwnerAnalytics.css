@@ -1,4 +1,4 @@
-/* StoreOwner Analytics styles */
+
 
 .StoreOwnerAnalyticsContainer {
   padding: 0;
@@ -40,14 +40,12 @@
   justify-content: center;
 }
 
-/* Chart Container */
 .StoreOwnerAnalyticsContainer .chart-container {
   position: relative;
   height: 300px;
   margin-bottom: 1rem;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .StoreOwnerAnalyticsContainer h1 {
     font-size: 1.5rem;

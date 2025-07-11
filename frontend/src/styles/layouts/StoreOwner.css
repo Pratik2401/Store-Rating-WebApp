@@ -1,14 +1,12 @@
-/* Store Owner Dashboard Layout Styles */
+
 @import "./LayoutCommon.css";
 
-/* Main Dashboard Container */
 .StoreOwnerDashboardContainer {
   min-height: 100vh;
   background: #f4f6fa;
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
 }
 
-/* Layout Row - Main flex container */
 .StoreOwnerLayoutRow {
   display: flex;
   flex-direction: row;
@@ -16,7 +14,6 @@
   min-height: 100vh;
 }
 
-/* Sidebar Container */
 .StoreOwnerSidebarContainer {
   width: 280px;
   min-height: 100vh;
@@ -36,7 +33,6 @@
   display: block;
 }
 
-/* Main Content Column */
 .StoreOwnerMainColumn {
   flex: 1;
   display: flex;
@@ -45,7 +41,6 @@
   min-height: 100vh;
 }
 
-/* Navbar Row */
 .StoreOwnerNavbarRow {
   width: 100%;
   flex-shrink: 0;
@@ -55,7 +50,6 @@
   display: block;
 }
 
-/* Main Content Area */
 .StoreOwnerMainContent {
   flex: 1;
   background-color: var(--background-primary);
@@ -71,7 +65,6 @@
   max-width: 100%;
 }
 
-/* Mobile Overlay */
 .storeowner-sidebar-mobile-overlay {
   position: fixed;
   top: 0;
@@ -87,7 +80,6 @@
   display: block;
 }
 
-/* Mobile responsive styles */
 @media (max-width: 991.98px) {
   .StoreOwnerLayoutRow {
     flex-direction: column;
@@ -124,12 +116,10 @@
   }
 }
 
-/* Main Wrapper */
 .StoreOwnerMainWrapper {
   min-height: calc(100vh - 60px);
 }
 
-/* Sidebar */
 .StoreOwnerSidebar {
   width: 280px;
   min-height: calc(100vh - 60px);
@@ -163,7 +153,6 @@
   font-weight: 600;
 }
 
-/* Sidebar Navigation */
 .StoreOwnerSidebarNav {
   gap: 0.25rem;
 }
@@ -226,7 +215,6 @@
   transition: opacity 0.3s ease;
 }
 
-/* Collapsed Sidebar Styles */
 .StoreOwnerSidebar.collapsed .StoreOwnerSidebarHeader {
   padding: 1rem 0.5rem;
 }
@@ -254,7 +242,6 @@
   padding: 0.5rem;
 }
 
-/* Main Content */
 .StoreOwnerMainContent {
   flex: 1;
   min-height: calc(100vh - 60px);
@@ -271,7 +258,6 @@
   max-width: 100%;
 }
 
-/* Navbar Styles */
 .StoreOwnerNavbar {
   height: 60px;
   background-color: var(--background-secondary);
@@ -381,7 +367,6 @@
   width: 1rem;
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
   .StoreOwnerSidebar {
     position: fixed;
@@ -455,7 +440,6 @@
   }
 }
 
-/* Sidebar Overlay for Mobile */
 @media (max-width: 768px) {
   .StoreOwnerSidebarOverlay {
     position: fixed;
@@ -476,7 +460,6 @@
   }
 }
 
-/* Animation Enhancements */
 .StoreOwnerSidebarNavLink {
   position: relative;
   overflow: hidden;
@@ -497,7 +480,6 @@
   left: 100%;
 }
 
-/* Focus Styles for Accessibility */
 .StoreOwnerSidebarNavLink:focus {
   outline: 2px solid var(--secondary-color);
   outline-offset: 2px;
@@ -513,7 +495,6 @@
   outline-offset: 2px;
 }
 
-/* High Contrast Mode */
 @media (prefers-contrast: high) {
   .StoreOwnerSidebar {
     border-right: 2px solid var(--text-primary);
@@ -533,7 +514,6 @@
   }
 }
 
-/* Print Styles */
 @media print {
   .StoreOwnerSidebar,
   .StoreOwnerNavbar {

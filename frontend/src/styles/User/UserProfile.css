@@ -1,17 +1,10 @@
-/* User Profile Component - Modern Branded Styles */
 
-/* ==========================================
-   Main Container
-   ========================================== */
 .profile-container {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   min-height: 100vh;
   padding: 1rem;
 }
 
-/* ==========================================
-   Profile Header Card
-   ========================================== */
 .profile-header-card {
   border: none;
   border-radius: 25px;
@@ -461,9 +454,6 @@
   font-weight: bold;
 }
 
-/* ==========================================
-   Form Cards
-   ========================================== */
 .profile-form-card {
   border: none;
   border-radius: 20px;
@@ -504,9 +494,6 @@
   padding: 2rem;
 }
 
-/* ==========================================
-   Form Elements
-   ========================================== */
 .profile-form-group {
   margin-bottom: 1.5rem;
   position: relative;
@@ -547,9 +534,6 @@
   resize: vertical;
 }
 
-/* ==========================================
-   Action Buttons
-   ========================================== */
 .profile-actions {
   display: flex;
   gap: 1rem;
@@ -620,9 +604,6 @@
   box-shadow: 0 8px 25px rgba(220, 53, 69, 0.4);
 }
 
-/* ==========================================
-   Password Strength Indicator
-   ========================================== */
 .password-strength-container {
   margin-top: 0.75rem;
 }
@@ -662,9 +643,6 @@
   margin-bottom: 0;
 }
 
-/* ==========================================
-   Error States
-   ========================================== */
 .profile-error-alert {
   border: none;
   border-radius: 15px;
@@ -687,9 +665,6 @@
   font-weight: 500;
 }
 
-/* ==========================================
-   Loading States
-   ========================================== */
 .profile-loading {
   min-height: 400px;
   display: flex;
@@ -713,9 +688,6 @@
   100% { transform: rotate(360deg); }
 }
 
-/* ==========================================
-   Password Input Styling
-   ========================================== */
 .password-input-container {
   position: relative;
 }
@@ -743,9 +715,6 @@
   }
 }
 
-/* ==========================================
-   Mobile Responsiveness
-   ========================================== */
 @media (max-width: 768px) {
   .profile-container {
     padding: 0.5rem;
@@ -812,18 +781,12 @@
   }
 }
 
-/* ==========================================
-   Accessibility & Focus States
-   ========================================== */
 .btn:focus,
 .profile-form-control:focus {
   outline: 2px solid #007bff;
   outline-offset: 2px;
 }
 
-/* ==========================================
-   Animation Classes
-   ========================================== */
 .fade-in {
   animation: fadeIn 0.5s ease-in;
 }

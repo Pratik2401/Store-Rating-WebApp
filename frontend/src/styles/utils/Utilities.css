@@ -1,6 +1,4 @@
-/* Utility Classes */
 
-/* Text Utilities */
 .text-primary-gradient {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
@@ -24,13 +22,11 @@
   overflow: hidden;
 }
 
-/* Border Utilities */
 .border-primary-gradient {
   border: 2px solid;
   border-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%) 1;
 }
 
-/* Background Utilities */
 .bg-primary-gradient {
   background: var(--primary-gradient);
 }
@@ -39,7 +35,6 @@
   background: var(--primary-gradient-hover);
 }
 
-/* Shadow Utilities */
 .shadow-hover {
   transition: box-shadow var(--transition-normal);
 }
@@ -48,7 +43,6 @@
   box-shadow: var(--shadow-lg);
 }
 
-/* Spacing Utilities */
 .p-xs { padding: var(--spacing-xs); }
 .p-sm { padding: var(--spacing-sm); }
 .p-md { padding: var(--spacing-md); }
@@ -61,7 +55,6 @@
 .m-lg { margin: var(--spacing-lg); }
 .m-xl { margin: var(--spacing-xl); }
 
-/* Flexbox Utilities */
 .flex-center {
   display: flex;
   align-items: center;
@@ -86,7 +79,6 @@
   justify-content: flex-end;
 }
 
-/* Position Utilities */
 .position-center {
   position: absolute;
   top: 50%;
@@ -94,24 +86,20 @@
   transform: translate(-50%, -50%);
 }
 
-/* Size Utilities */
 .w-fit { width: fit-content; }
 .h-fit { height: fit-content; }
 
 .min-h-screen { min-height: 100vh; }
 .min-h-content { min-height: calc(100vh - var(--navbar-height)); }
 
-/* Overflow Utilities */
 .overflow-hidden { overflow: hidden; }
 .overflow-auto { overflow: auto; }
 .overflow-x-auto { overflow-x: auto; }
 .overflow-y-auto { overflow-y: auto; }
 
-/* Cursor Utilities */
 .cursor-pointer { cursor: pointer; }
 .cursor-not-allowed { cursor: not-allowed; }
 
-/* Visibility Utilities */
 .visually-hidden-focusable:not(:focus):not(:focus-within) {
   position: absolute !important;
   width: 1px !important;
@@ -124,7 +112,6 @@
   border: 0 !important;
 }
 
-/* Interactive Utilities */
 .hover-lift {
   transition: transform var(--transition-normal);
 }
@@ -141,7 +128,6 @@
   transform: scale(1.05);
 }
 
-/* Loading Utilities */
 .loading-skeleton {
   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
   background-size: 200% 100%;
@@ -153,7 +139,6 @@
   100% { background-position: -200% 0; }
 }
 
-/* Focus Utilities for Accessibility */
 .focus-visible {
   outline: 2px solid #667eea;
   outline-offset: 2px;
@@ -166,7 +151,6 @@
   outline-offset: 2px;
 }
 
-/* Print Utilities */
 @media print {
   .print-hidden { display: none !important; }
   .print-block { display: block !important; }
@@ -174,7 +158,6 @@
   .print-inline-block { display: inline-block !important; }
 }
 
-/* Touch Utilities for Mobile */
 .touch-target {
   min-height: 44px;
   min-width: 44px;
@@ -185,7 +168,6 @@
   min-width: 38px;
 }
 
-/* Accessibility Utilities */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -208,7 +190,6 @@
   white-space: normal;
 }
 
-/* Container Utilities */
 .AppContainer {
   min-height: 100vh;
 }

@@ -1,4 +1,4 @@
-/* System Admin Store Management - Dashboard Style */
+
 .SystemAdminStoreManagement {
   min-height: 100vh;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -6,7 +6,6 @@
   padding: 2rem;
 }
 
-/* Dashboard Cards Enhanced */
 .SystemAdminStoreManagement .card {
   border: none;
   border-radius: 16px;
@@ -48,7 +47,6 @@
   font-size: 1rem;
 }
 
-/* Stats Cards with Brand Colors */
 .SystemAdminStoreManagement .stats-card {
   background: linear-gradient(135deg, #010ED0 0%, #0c0fa8 100%);
   color: #ffffff;
@@ -94,7 +92,6 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* Welcome Section Enhanced */
 .SystemAdminStoreManagement .welcome-section {
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   border-radius: 20px;
@@ -137,7 +134,6 @@
   line-height: 1.6;
 }
 
-/* Button Styling */
 .SystemAdminStoreManagement .btn-outline-primary {
   border-color: #010ED0;
   color: #010ED0;
@@ -154,7 +150,6 @@
   box-shadow: 0 4px 12px rgba(1, 14, 208, 0.3);
 }
 
-/* Alert Styling */
 .SystemAdminStoreManagement .alert {
   border-radius: 12px;
   border: none;
@@ -170,7 +165,6 @@
   color: #ffffff;
 }
 
-/* Table Styling */
 .SystemAdminStoreManagement .table {
   margin-bottom: 0;
 }
@@ -202,7 +196,6 @@
   vertical-align: middle;
 }
 
-/* Badge Styling */
 .SystemAdminStoreManagement .badge {
   font-size: 0.75rem;
   padding: 0.5rem 0.75rem;
@@ -212,14 +205,12 @@
   letter-spacing: 0.5px;
 }
 
-/* Button in Table */
 .SystemAdminStoreManagement .btn-sm {
   padding: 0.5rem 1rem;
   border-radius: 8px;
   font-weight: 600;
 }
 
-/* Modal Styles */
 .SystemAdminStoreManagement .modal-content {
   background-color: #ffffff !important;
   border: none;
@@ -260,7 +251,6 @@
   border-top: 1px solid #e9ecef;
 }
 
-/* Store Details Styling */
 .SystemAdminStoreManagement .StoreDetails h5 {
   color: #010ED0;
   font-weight: 700;
@@ -277,7 +267,6 @@
   font-weight: 600;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .SystemAdminStoreManagement {
     padding: 1rem;

@@ -1,4 +1,4 @@
-/* Store List Component Modern Styles - Aligned with Dashboard */
+
 .StoreList {
   padding: 2rem;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -6,7 +6,6 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Header - Matching Dashboard welcome section */
 .StoreListHeader {
   margin-bottom: 2rem;
   padding: 1.5rem 2rem;
@@ -43,7 +42,6 @@
   box-shadow: 0 4px 15px rgba(1, 14, 208, 0.3);
 }
 
-/* Filters - Aligned with Dashboard cards */
 .StoreListFilters {
   border: none;
   border-radius: 16px;
@@ -93,7 +91,6 @@
   background-color: #ffffff;
 }
 
-/* Store Cards - Aligned with Dashboard stats cards */
 .StoreCard {
   border: none;
   border-radius: 16px;
@@ -270,7 +267,7 @@
 }
 
 .StoreCardActions .btn-outline-warning {
-  color: #ff6b35;
+  color: #ff6b35 !important;
   border: 2px solid #ff6b35;
   background: transparent;
 }
@@ -284,7 +281,7 @@
 }
 
 .StoreCardActions .btn-outline-success {
-  color: #28a745;
+  color: #28a745 !important;
   border: 2px solid #28a745;
   background: transparent;
 }
@@ -305,7 +302,6 @@
   color: #0c0fa8 !important;
 }
 
-/* SVG star handling for StoreList */
 .StoreCardStars .fa-star svg,
 .StoreCardStars svg.fa-star {
   transition: all 0.3s ease;
@@ -326,7 +322,6 @@
   fill: #0c0fa8 !important;
 }
 
-/* No Results - Aligned with Dashboard */
 .StoreListNoResults {
   border: none;
   border-radius: 16px;
@@ -353,7 +348,6 @@
   font-size: 1rem;
 }
 
-/* Loading - Aligned with Dashboard */
 .StoreListLoading {
   min-height: 300px;
   display: flex;
@@ -379,7 +373,6 @@
   margin-top: 1rem;
 }
 
-/* Pagination - Aligned with Dashboard */
 .StoreListPagination {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
@@ -421,7 +414,6 @@
   border-color: #e9ecef;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .StoreList {
     padding: 1rem;
@@ -592,7 +584,6 @@
   }
 }
 
-/* Ultra-mobile responsive styles for very small screens */
 @media (max-width: 420px) {
   .StoreList {
     padding: 0.5rem;
@@ -669,7 +660,6 @@
   }
 }
 
-/* Animation Enhancements - Subtle like Dashboard */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -711,7 +701,6 @@
   animation: fadeInUp 0.5s ease-out 0.1s both;
 }
 
-/* Dashboard-like action buttons */
 .action-btn {
   background-color: #010ED0;
   border-color: #010ED0;
@@ -732,7 +721,6 @@
   font-size: 0.875rem;
 }
 
-/* Accessibility */
 .StoreCardActions .btn:focus {
   box-shadow: 0 0 0 3px rgba(1, 14, 208, 0.3);
   outline: none;
@@ -748,7 +736,6 @@
   outline: none;
 }
 
-/* Print Styles */
 @media print {
   .StoreListFilters,
   .StoreListPagination {
@@ -772,7 +759,6 @@
   }
 }
 
-/* Badge Variants - Aligned with Dashboard */
 .badge.bg-primary {
   background-color: #010ED0 !important;
   border: none;
@@ -800,7 +786,6 @@
   color: #ffffff !important;
 }
 
-/* Enhanced Button Variants */
 .btn-outline-warning {
   color: #ff6b35;
   border: 2px solid #ff6b35;
@@ -833,7 +818,6 @@
   box-shadow: 0 6px 20px rgba(40, 167, 69, 0.3);
 }
 
-/* Focus and Active States for Better UX */
 .StoreCardActions .btn:active {
   transform: translateY(0px);
 }
@@ -845,7 +829,6 @@
   box-shadow: none !important;
 }
 
-/* Loading and Error States Enhanced */
 .StoreListLoading {
   animation: fadeInUp 0.6s ease-out;
 }
@@ -854,7 +837,6 @@
   animation: fadeInUp 0.6s ease-out;
 }
 
-/* Filter Icons Enhancement */
 .StoreListFilters .form-label .fa-search,
 .StoreListFilters .form-label .fa-filter,
 .StoreListFilters .form-label .fa-star {
@@ -862,7 +844,6 @@
   font-size: 0.9rem;
 }
 
-/* Hover Effects for Better Interaction */
 .StoreListFilters .form-control:hover,
 .StoreListFilters .form-select:hover {
   border-color: rgba(1, 14, 208, 0.3);
@@ -870,12 +851,10 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Enhanced Card Body Layout */
 .StoreCard .card-body > div:last-child {
   margin-top: auto;
 }
 
-/* Improved Star Rating Layout */
 .StoreCardRating .d-flex.align-items-center {
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -892,7 +871,6 @@
   font-weight: 500;
 }
 
-/* Enhanced mobile-first responsive adjustments for star ratings */
 @media (max-width: 991px) {
   .StoreCardRating .d-flex.align-items-center {
     flex-wrap: wrap;
@@ -915,7 +893,6 @@
   }
 }
 
-/* Ensure touch-friendly star ratings on mobile */
 @media (hover: none) and (pointer: coarse) {
   .StoreCardStars .fa-star {
     min-width: 16px;

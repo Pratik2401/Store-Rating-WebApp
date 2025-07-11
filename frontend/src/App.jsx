@@ -14,9 +14,6 @@ import { setAuthHandlers } from './utils/authNavigation'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/index.css'
 
-// Protected Route Component is now imported from separate file
-
-// Unauthorized Component
 const Unauthorized = () => {
   return (
     <div className="UnauthorizedContainer d-flex justify-content-center align-items-center min-vh-100">
@@ -31,16 +28,13 @@ const Unauthorized = () => {
   )
 }
 
-// Component to set up auth handlers
 const AppContent = () => {
   const navigate = useNavigate()
   const notification = useNotification()
 
   useEffect(() => {
-    // Set auth handlers for smooth navigation
     setAuthHandlers(navigate, notification)
 
-    // Listen for force logout events
     const handleForceLogout = (event) => {
       navigate('/login', { replace: true })
     }

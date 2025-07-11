@@ -1,6 +1,4 @@
-/* Bootstrap Text Utility Overrides */
 
-/* Text Colors */
 .text-primary {
   color: var(--primary-color) !important;
 }
@@ -41,7 +39,6 @@
   color: var(--text-white) !important;
 }
 
-/* Background Colors */
 .bg-primary {
   background-color: var(--primary-color) !important;
 }
@@ -74,7 +71,6 @@
   background-color: var(--text-dark) !important;
 }
 
-/* Border Colors */
 .border-primary {
   border-color: var(--primary-color) !important;
 }
@@ -107,7 +103,6 @@
   border-color: var(--border-dark) !important;
 }
 
-/* Button Overrides */
 .btn-primary {
   background-color: var(--btn-primary-bg) !important;
   border-color: var(--btn-primary-border) !important;
@@ -192,7 +187,6 @@
   color: var(--text-white) !important;
 }
 
-/* Form Controls */
 .form-control {
   background-color: var(--input-bg);
   border-color: var(--input-border);
@@ -215,7 +209,6 @@
   box-shadow: var(--input-focus-shadow);
 }
 
-/* Cards */
 .card {
   background-color: var(--card-background);
   border-color: var(--border-color);
@@ -226,7 +219,6 @@
   border-bottom-color: var(--border-color);
 }
 
-/* Badges */
 .badge.bg-primary {
   background-color: var(--primary-color) !important;
 }
@@ -252,7 +244,6 @@
   background-color: var(--info-color) !important;
 }
 
-/* Alerts */
 .alert-primary {
   background-color: var(--primary-light);
   border-color: var(--primary-color);

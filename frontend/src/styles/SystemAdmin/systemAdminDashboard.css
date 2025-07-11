@@ -1,11 +1,9 @@
-/* System Admin Dashboard Modern Styling - Matching User Dashboard */
 .SystemAdminDashboard {
   min-height: 100vh;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Dashboard Cards Enhanced */
 .SystemAdminDashboard .card {
   border: none;
   border-radius: 16px;
@@ -47,7 +45,6 @@
   font-size: 1rem;
 }
 
-/* Stats Cards with Brand Colors */
 .SystemAdminDashboard .stats-card {
   background: linear-gradient(135deg, #010ED0 0%, #0c0fa8 100%);
   color: #ffffff;
@@ -89,7 +86,6 @@
   font-weight: 500;
 }
 
-/* Welcome Section Enhanced */
 .SystemAdminDashboard .welcome-section {
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   border-radius: 20px;
@@ -125,7 +121,6 @@
   line-height: 1.6;
 }
 
-/* Action Buttons Modern Design */
 .SystemAdminDashboard .action-btn {
   background: linear-gradient(135deg, #010ED0 0%, #0c0fa8 100%);
   border: none;
@@ -159,7 +154,6 @@
   transform: translateY(-1px);
 }
 
-/* Outline Action Button Variant */
 .SystemAdminDashboard .action-btn-outline {
   background: transparent;
   border: 2px solid #010ED0;
@@ -177,7 +171,6 @@
   box-shadow: 0 6px 20px rgba(1, 14, 208, 0.3);
 }
 
-/* Small Action Button Variant */
 .SystemAdminDashboard .action-btn-sm {
   padding: 0.5rem 1.5rem;
   font-size: 0.875rem;
@@ -190,7 +183,6 @@
   box-shadow: 0 6px 20px rgba(1, 14, 208, 0.3);
 }
 
-/* Enhanced Button Styles */
 .SystemAdminDashboard .btn-primary {
   background: linear-gradient(135deg, #010ED0 0%, #0c0fa8 100%);
   border: none;
@@ -225,7 +217,6 @@
   box-shadow: 0 6px 20px rgba(1, 14, 208, 0.3);
 }
 
-/* Small Button Variants */
 .SystemAdminDashboard .btn-sm {
   padding: 0.5rem 1.5rem;
   font-size: 0.875rem;
@@ -233,7 +224,6 @@
   font-weight: 500;
 }
 
-/* Button Link Styles */
 .SystemAdminDashboard .btn[href] {
   text-decoration: none;
 }
@@ -242,7 +232,6 @@
   text-decoration: none;
 }
 
-/* Activity and Featured Lists */
 .SystemAdminDashboard .activity-list,
 .SystemAdminDashboard .featured-list {
   max-height: 400px;
@@ -263,7 +252,6 @@
   padding-right: 1rem;
 }
 
-/* Loading States */
 .SystemAdminDashboardLoading {
   min-height: 60vh;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -287,7 +275,6 @@
   margin: 0;
 }
 
-/* Error States */
 .SystemAdminDashboardError {
   margin: 2rem 0;
   border: none;
@@ -295,14 +282,12 @@
   box-shadow: 0 4px 20px rgba(220, 53, 69, 0.15);
 }
 
-/* Focus States for Better Accessibility */
 .SystemAdminDashboard .action-btn:focus-visible,
 .SystemAdminDashboard .btn:focus-visible {
   outline: 3px solid rgba(1, 14, 208, 0.5);
   outline-offset: 2px;
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
   .SystemAdminDashboard .welcome-section {
     padding: 2rem;
@@ -321,7 +306,6 @@
   }
 }
 
-/* Tablet Layout */
 @media (max-width: 991.98px) {
   .SystemAdminDashboard .welcome-section {
     padding: 1.5rem;
@@ -332,7 +316,6 @@
   }
 }
 
-/* Animation and Transitions */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -360,588 +343,6 @@
   animation-delay: 0.3s;
 }
 
-/* Remove remaining old styles and keep the rest of the original CSS intact */
-
-@media (max-width: 1199.98px) {
-  .AdminMainContent {
-    max-width: 98vw;
-    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .AdminLayoutRow {
-    flex-direction: column;
-    min-width: 0;
-    width: 100vw;
-    min-height: 100vh;
-  }
-  .AdminSidebarContainer {
-    width: 100vw;
-    min-width: 0;
-    max-width: 100vw;
-    height: auto;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1055;
-    background: #fff;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-    border-right: none;
-    border-bottom: 1px solid #e0e3e8;
-  }
-  .AdminMainColumn {
-    width: 100vw;
-    min-width: 0;
-    margin-left: 0;
-    /* margin-top: 56px; */
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  .AdminNavbarRow {
-    width: 100vw;
-    min-width: 0;
-    margin: 0;
-    border-radius: 0;
-    box-shadow: 0 2px 8px 0 rgba(80,90,120,0.04);
-  }
-  .AdminMainContent {
-    width: 100vw;
-    max-width: 100vw;
-    margin: 0;
-    padding: 0.5rem 0.5rem 1rem 0.5rem;
-    min-height: calc(100vh - 56px);
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 12px 0 rgba(80,90,120,0.06);
-  }
-}
-
-@media (max-width: 767.98px) {
-  .AdminSidebarContainer {
-    min-width: 0;
-    width: 100vw;
-  }
-  .AdminMainContent {
-    padding: 0.5rem 0.25rem 0.75rem 0.25rem;
-    border-radius: 0.3rem;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .AdminMainContent {
-    padding: 0.25rem 0.1rem 0.5rem 0.1rem;
-    border-radius: 0.2rem;
-  }
-  .AdminMainContainer {
-    padding: 0 !important;
-  }
-}
-/* --- Restore classic Admin Dashboard structure and responsive layout --- */
-.AdminDashboardContainer {
-  min-height: 100vh;
-  background: #f4f6fa;
-  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-}
-
-.AdminLayoutRow {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  min-height: 100vh;
-  background: transparent;
-}
-
-.AdminSidebarContainer {
-  width: 280px;
-  min-width: 280px;
-  background: #fff;
-  border-right: 1px solid #e0e3e8;
-  box-shadow: 2px 0 12px 0 rgba(80,90,120,0.04);
-  z-index: 1050;
-  position: relative;
-  transition: width 0.3s cubic-bezier(.4,0,.2,1);
-}
-
-.AdminMainColumn {
-  flex: 1 1 0%;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  background: transparent;
-}
-
-.AdminNavbarRow {
-  width: 100%;
-  background: #fff;
-  box-shadow: 0 2px 12px 0 rgba(80,90,120,0.06);
-  border-bottom: 1px solid #e0e3e8;
-  z-index: 1060;
-  /* position: sticky; */
-  top: 0;
-}
-
-.AdminMainContent {
-  width: 100%;
-  margin: 0 auto;
-  flex-grow: 1;
-  background: #fff;
-  border-radius: 0.8rem;
-  box-shadow: 0 4px 32px 0 rgba(80,90,120,0.08);
-  padding: 2rem 2rem 2rem 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  min-height: 70vh;
-  transition: box-shadow 0.2s, background 0.2s;
-}
-
-/* Removed duplicate @media (max-width: 991.98px) block for AdminLayoutRow, AdminSidebarContainer, AdminMainColumn, AdminNavbarRow, AdminMainContent. See below for the single, unified block. */
-
-@media (max-width: 575.98px) {
-  .AdminMainContent {
-    padding: 0.25rem 0.25rem 0.5rem 0.25rem;
-    border-radius: 0.3rem;
-  }
-  .AdminMainContainer {
-    padding: 0 !important;
-  }
-}
-/* --- Modern, Responsive Admin Dashboard UI --- */
-.AdminDashboardContainer {
-  min-height: 100vh;
-  background: var(--vamtam-bg, #f4f6fa);
-  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-}
-
-.AdminLayoutRow {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  min-height: 100vh;
-  background: transparent;
-}
-
-
-/* --- Modern Sidebar: overlays content on mobile, always visible on desktop --- */
-
-/* --- Modern Sidebar: overlays content on mobile, always visible on desktop --- */
-/* AdminSidebarContainer: hidden by default on mobile, visible on desktop */
-.AdminSidebarContainer {
-  width: 260px;
-  min-width: 220px;
-  max-width: 320px;
-  background: linear-gradient(135deg, #f8fafc 0%, #e9ecef 100%);
-  border-right: 1.5px solid #e0e3e8;
-  box-shadow: 2px 0 12px 0 rgba(80,90,120,0.04);
-  z-index: 1050;
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: auto;
-  transform: translateX(-100%);
-  opacity: 0;
-  pointer-events: none;
-  display: none;
-  transition: transform 0.3s cubic-bezier(.4,0,.2,1), opacity 0.2s;
-}
-.AdminSidebarContainer.open {
-  display: block !important;
-  transform: translateX(0) !important;
-  opacity: 1 !important;
-  pointer-events: auto !important;
-  z-index: 1060 !important;
-  box-shadow: 0 0 24px 0 rgba(0,0,0,0.18) !important;
-}
-
-@media (min-width: 992px) {
-  .AdminSidebarContainer {
-    display: block !important;
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 260px;
-    min-width: 220px;
-    max-width: 320px;
-    height: auto;
-    transform: none !important;
-    opacity: 1 !important;
-    pointer-events: auto !important;
-    z-index: 1050;
-    box-shadow: 2px 0 12px 0 rgba(80,90,120,0.04);
-    border-right: 1.5px solid #e0e3e8;
-    border-bottom: none;
-  }
-  .AdminSidebarContainer.open {
-    /* No effect on desktop, always visible */
-    display: block !important;
-    transform: none !important;
-    opacity: 1 !important;
-    pointer-events: auto !important;
-    z-index: 1050 !important;
-    box-shadow: 2px 0 12px 0 rgba(80,90,120,0.04) !important;
-  }
-}
-.AdminSidebarContainer.open,
-.AdminSidebarContainer.open-mobile {
-  display: block !important;
-  transform: translateX(0) !important;
-  opacity: 1 !important;
-  pointer-events: auto !important;
-  z-index: 1060 !important;
-  box-shadow: 0 0 24px 0 rgba(0,0,0,0.18) !important;
-}
-.AdminSidebarContainer.closed-mobile {
-  display: none !important;
-  pointer-events: none !important;
-  opacity: 0 !important;
-}
-
-@media (min-width: 992px) {
-  .AdminSidebarContainer {
-    display: block !important;
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 260px;
-    min-width: 220px;
-    max-width: 320px;
-    height: auto;
-    transform: none !important;
-    opacity: 1 !important;
-    pointer-events: auto !important;
-    z-index: 1050 !important;
-    box-shadow: 2px 0 12px 0 rgba(80,90,120,0.04) !important;
-    border-right: 1.5px solid #e0e3e8;
-    border-bottom: none;
-  }
-  .AdminSidebarContainer.open,
-  .AdminSidebarContainer.open-mobile {
-    /* No effect on desktop, always visible */
-    display: block !important;
-    transform: none !important;
-    opacity: 1 !important;
-    pointer-events: auto !important;
-    z-index: 1050 !important;
-    box-shadow: 2px 0 12px 0 rgba(80,90,120,0.04) !important;
-  }
-  .AdminSidebarContainer.closed-mobile {
-    display: block !important;
-    opacity: 1 !important;
-    pointer-events: auto !important;
-  }
-}
-
-/* Hidden by default on mobile */
-
-/* Overlay for mobile when sidebar is open */
-.admin-sidebar-mobile-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: auto;
-  background: rgba(0,0,0,0.2);
-  z-index: 1055;
-  display: none;
-}
-.admin-sidebar-mobile-overlay.show {
-  display: block;
-}
-
-@media (min-width: 992px) {
-  .AdminSidebarContainer {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 260px;
-    min-width: 220px;
-    max-width: 320px;
-    height: auto;
-    transform: none;
-    opacity: 1;
-    pointer-events: auto;
-    z-index: 1050;
-    box-shadow: 2px 0 12px 0 rgba(80,90,120,0.04);
-    border-right: 1.5px solid #e0e3e8;
-    border-bottom: none;
-  }
-  .AdminSidebarContainer.open {
-    /* No effect on desktop, always visible */
-    transform: none;
-    opacity: 1;
-    pointer-events: auto;
-    z-index: 1050;
-
-  }
-}
-
-.AdminMainColumn {
-  flex: 1 1 0%;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  background: transparent;
-}
-
-.AdminNavbarRow {
-  width: 100%;
-  background: #fff;
-  box-shadow: 0 2px 12px 0 rgba(80,90,120,0.06);
-  border-bottom: 1.5px solid #e0e3e8;
-  z-index: 1060;
-  /* position: sticky; */
-  top: 0;
-}
-
-
-/* Main content area - single definition, responsive handled by media queries below */
-.AdminMainContent {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-grow: 1;
-  background: #fff;
-  border-radius: 1.2rem;
-  box-shadow: 0 4px 32px 0 rgba(80,90,120,0.08);
-  padding: 2.5rem 2.5rem 2rem 2.5rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  min-height: 70vh;
-  transition: box-shadow 0.2s, background 0.2s;
-}
-
-@media (max-width: 1199.98px) {
-  .AdminMainContent {
-    max-width: 98vw;
-    padding: 1.5rem 0.5rem 1.5rem 0.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-}
-
-
-@media (max-width: 991.98px) {
-  .AdminLayoutRow {
-    flex-direction: column;
-    min-width: 0;
-    width: 100vw;
-    min-height: auto;
-  }
-  .AdminMainColumn {
-    width: 100vw;
-    min-width: 0;
-    margin-left: 0;
-    /* margin-top: 56px; */
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    background: transparent;
-  }
-  .AdminNavbarRow {
-    width: 100vw;
-    min-width: 0;
-    margin: 0;
-    border-radius: 0;
-    box-shadow: 0 2px 8px 0 rgba(80,90,120,0.04);
-  }
-  .AdminMainContent {
-    width: 100vw;
-    max-width: 100vw;
-    margin: 0;
-    padding: 0.5rem 0.5rem 1rem 0.5rem;
-    min-height: calc(100vh - 56px);
-    border-radius: 0.7rem;
-    box-shadow: 0 2px 12px 0 rgba(80,90,120,0.06);
-  }
-}
-
-@media (max-width: 575.98px) {
-  .AdminMainContent {
-    padding: 0.25rem 0.25rem 0.5rem 0.25rem;
-    border-radius: 0.5rem;
-  }
-  .AdminMainContainer {
-    padding: 0 !important;
-  }
-}
-/* --- Responsive Admin Layout --- */
-@media (max-width: 991.98px) {
-  .AdminLayoutRow {
-    flex-direction: column;
-    width: 100vw;
-    min-width: 0;
-    height: auto; /* Changed from 100vh to auto */
-  }
-  .AdminSidebarContainer {
-    width: 100vw;
-    min-width: 0;
-    height: auto;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1055;
-    background: #fff;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-  }
-  .AdminMainColumn {
-    width: 100vw;
-    min-width: 0;
-    margin-left: 0;
-    /* margin-top: 56px; */
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  .AdminNavbarRow {
-    width: 100vw;
-    min-width: 0;
-    margin: 0;
-  }
-  .AdminMainContent {
-    width: 100vw;
-    max-width: 100vw;
-    margin: 0;
-    padding: 0.5rem 0.5rem 1rem 0.5rem;
-    min-height: calc(100vh - 56px);
-    box-sizing: border-box;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .AdminMainContent {
-    padding: 0.25rem 0.25rem 0.5rem 0.25rem;
-  }
-  .AdminMainContainer {
-    padding: 0 !important;
-  }
-}
-
-@media (min-width: 992px) {
-  .AdminLayoutRow {
-    flex-direction: row;
-    width: 100%;
-    min-width: 0;
-    height: 100vh;
-  }
-  .AdminSidebarContainer {
-    width: 280px;
-    min-width: 280px;
-    height: auto;
-    position: relative;
-    left: 0;
-    top: 0;
-    z-index: 1050;
-    background: #f8f9fa;
-    box-shadow: none;
-  }
-  .AdminMainColumn {
-    width: calc(100% - 280px);
-    min-width: 0;
-    margin-left: 0;
-    margin-top: 0;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  .AdminNavbarRow {
-    width: 100%;
-    min-width: 0;
-    margin: 0;
-  }
-  .AdminMainContent {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 2rem 2rem 2rem;
-    min-height: calc(100vh - 56px);
-    box-sizing: border-box;
-  }
-}
-/* Responsive Admin Layout */
-@media (max-width: 991.98px) {
-  .AdminLayoutRow {
-    flex-direction: column;
-    width: 100vw;
-    min-width: 0;
-    height: 100vh;
-  }
-  .AdminSidebarContainer {
-    width: 100vw;
-    min-width: 0;
-    height: auto;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1055;
-  }
-  .AdminMainColumn {
-    width: 100vw;
-    min-width: 0;
-    margin-left: 0;
-    /* margin-top: 56px; */
-    flex-grow: 1;
-  }
-  .AdminNavbarRow {
-    width: 100vw;
-    min-width: 0;
-    margin: 0;
-  }
-  .AdminMainContent {
-    width: 100vw;
-    max-width: 100vw;
-    margin: 0;
-    padding: 0.5rem 0.5rem 1rem 0.5rem;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .AdminMainContent {
-    padding: 0.25rem 0.25rem 0.5rem 0.25rem;
-  }
-  .AdminMainContainer {
-    padding: 0 !important;
-  }
-}
-
-@media (min-width: 992px) {
-  .AdminLayoutRow {
-    flex-direction: row;
-    width: 100%;
-    min-width: 0;
-    height: 100vh;
-  }
-  .AdminSidebarContainer {
-    width: 280px;
-    min-width: 280px;
-    height: auto;
-    position: relative;
-    left: 0;
-    top: 0;
-    z-index: 1050;
-  }
-  .AdminMainColumn {
-    width: calc(100% - 280px);
-    min-width: 0;
-    margin-left: 0;
-    margin-top: 0;
-    flex-grow: 1;
-  }
-  .AdminNavbarRow {
-    width: 100%;
-    min-width: 0;
-    margin: 0;
-  }
-  .AdminMainContent {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 2rem 2rem 2rem;
-  }
-}
-
-/* Spinning animation for refresh button */
 .fa-spin {
   animation: fa-spin 1s infinite linear;
 }
@@ -955,7 +356,6 @@
   }
 }
 
-/* Welcome section improvements */
 .SystemAdminDashboard .welcome-section .d-flex {
   flex-wrap: wrap;
   gap: 1rem;
@@ -966,7 +366,6 @@
   min-width: 300px;
 }
 
-/* Store info improvements */
 .SystemAdminDashboard .store-info {
   flex: 1;
   min-width: 0;
@@ -976,7 +375,6 @@
   word-wrap: break-word;
 }
 
-/* Responsive improvements */
 @media (max-width: 768px) {
   .SystemAdminDashboard .welcome-section .d-flex {
     flex-direction: column;
@@ -992,7 +390,6 @@
   }
 }
 
-/* Empty state improvements */
 .SystemAdminDashboard .text-center.py-5 {
   padding: 3rem 1rem !important;
 }

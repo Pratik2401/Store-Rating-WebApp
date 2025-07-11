@@ -1,9 +1,8 @@
-/* Store Owner Dashboard Component Styles */
+
 .StoreOwnerDashboard {
   padding: 0;
 }
 
-/* Dashboard Header */
 .StoreOwnerDashboardHeader {
   margin-bottom: 1.5rem;
 }
@@ -24,7 +23,6 @@
   font-size: 0.9rem;
 }
 
-/* Stats Cards */
 .StoreOwnerStatsGrid {
   margin-bottom: 2rem;
 }
@@ -105,7 +103,6 @@
   color: var(--text-muted);
 }
 
-/* Ratings Section */
 .StoreOwnerRatingsSection {
   margin-bottom: 2rem;
 }
@@ -132,7 +129,6 @@
   padding: 0;
 }
 
-/* Rating Item */
 .StoreOwnerRatingItem {
   padding: 1.25rem;
   border-bottom: 1px solid var(--border-light);
@@ -223,7 +219,6 @@
   color: white;
 }
 
-/* Empty State */
 .StoreOwnerRatingsEmpty {
   text-align: center;
   padding: 3rem 1rem;
@@ -246,7 +241,6 @@
   font-size: 0.9rem;
 }
 
-/* Loading State */
 .StoreOwnerDashboardLoading {
   min-height: 400px;
   display: flex;
@@ -259,13 +253,11 @@
   color: var(--primary-color);
 }
 
-/* Error State */
 .StoreOwnerDashboardError {
   text-align: center;
   padding: 2rem;
 }
 
-/* Action Buttons */
 .StoreOwnerDashboardActions {
   margin-bottom: 1.5rem;
 }
@@ -275,7 +267,6 @@
   margin-bottom: 0.5rem;
 }
 
-/* Charts Container */
 .StoreOwnerChartsSection {
   margin-bottom: 2rem;
 }
@@ -302,7 +293,6 @@
   padding: 1.25rem;
 }
 
-/* Recent Activity */
 .StoreOwnerRecentActivity {
   margin-bottom: 2rem;
 }
@@ -371,7 +361,6 @@
   font-size: 0.8rem;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .StoreOwnerDashboardHeader {
     text-align: center;
@@ -464,7 +453,6 @@
   }
 }
 
-/* Animation Enhancements */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -519,7 +507,6 @@
   animation: countUp 0.8s ease-out 0.3s both;
 }
 
-/* Accessibility */
 .StoreOwnerStatsCard:focus-within {
   outline: 2px solid var(--primary-color);
   outline-offset: 2px;
@@ -531,7 +518,6 @@
   outline-offset: -2px;
 }
 
-/* Print Styles */
 @media print {
   .StoreOwnerDashboardActions {
     display: none;

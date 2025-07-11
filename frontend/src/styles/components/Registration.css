@@ -1,11 +1,10 @@
-/* Registration Component Styles */
+
 .RegistrationContainer {
   min-height: 100vh;
   background: linear-gradient(135deg, var(--primary-light) 0%, var(--background-primary) 100%);
   padding: 2rem 0;
 }
 
-/* Registration Card */
 .RegistrationCard {
   border: none;
   border-radius: var(--border-radius-lg);
@@ -18,7 +17,6 @@
   padding: 2rem;
 }
 
-/* Header */
 .RegistrationHeader {
   margin-bottom: 2rem;
 }
@@ -43,7 +41,6 @@
   line-height: 1.5;
 }
 
-/* Form Elements */
 .RegistrationContainer .form-label {
   color: var(--text-primary);
   font-weight: 600;
@@ -94,7 +91,6 @@
   margin-top: 0.25rem;
 }
 
-/* Password Toggle */
 .PasswordToggle {
   border-left: none;
   background-color: var(--background-light);
@@ -114,7 +110,6 @@
   border-color: var(--primary-color);
 }
 
-/* Password Strength Indicator */
 .PasswordStrength {
   margin-top: 0.5rem;
 }
@@ -154,7 +149,6 @@
   width: 100%;
 }
 
-/* Submit Button */
 .RegistrationSubmitBtn {
   background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
   border: none;
@@ -188,7 +182,6 @@
   box-shadow: none;
 }
 
-/* Footer */
 .RegistrationFooter {
   padding-top: 1rem;
   border-top: 1px solid var(--border-light);
@@ -206,7 +199,6 @@
   text-decoration: underline;
 }
 
-/* Input Group Styling */
 .RegistrationContainer .input-group .form-control {
   border-right: none;
 }
@@ -223,7 +215,6 @@
   border-color: var(--danger-color);
 }
 
-/* Character Counter */
 .RegistrationContainer .form-text {
   display: flex;
   justify-content: space-between;
@@ -234,7 +225,6 @@
   color: var(--danger-color);
 }
 
-/* Animation Enhancements */
 @keyframes slideInUp {
   from {
     opacity: 0;
@@ -266,7 +256,6 @@
   animation: pulse 2s infinite;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .RegistrationContainer {
     padding: 1rem 0;
@@ -339,7 +328,6 @@
   }
 }
 
-/* Focus Styles for Accessibility */
 .RegistrationContainer .form-control:focus {
   outline: none;
 }
@@ -360,7 +348,6 @@
   border-radius: 2px;
 }
 
-/* High Contrast Mode */
 @media (prefers-contrast: high) {
   .RegistrationCard {
     border: 2px solid var(--text-primary);
@@ -377,7 +364,6 @@
   }
 }
 
-/* Print Styles */
 @media print {
   .RegistrationContainer {
     background: white;

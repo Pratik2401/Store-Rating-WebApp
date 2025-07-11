@@ -5,7 +5,7 @@ import { FaArrowLeft, FaStar, FaRegStar, FaMapMarker, FaPhone, FaEnvelope, FaGlo
 import userAPI from '../../../api/User/userAPI'
 import { showSuccessAlert, showErrorAlert, showWarningAlert, showConfirmAlert } from '../../../utils/SweetAlert'
 import '../../../styles/User/userStoreDetails.css'
-import '../../../styles/components/RatingModal.css'
+import '../../../styles/User/RatingModal.css'
 
 const StoreDetails = () => {
   const { storeId } = useParams()

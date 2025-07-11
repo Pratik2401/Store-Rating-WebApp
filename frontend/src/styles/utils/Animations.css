@@ -1,6 +1,4 @@
-/* Animation Utilities */
 
-/* Fade Animations */
 .fade-in {
   animation: fadeIn 0.3s ease-in;
 }
@@ -21,7 +19,6 @@
   animation: fadeInRight 0.3s ease-out;
 }
 
-/* Slide Animations */
 .slide-in {
   animation: slideIn 0.3s ease-out;
 }
@@ -34,7 +31,6 @@
   animation: slideInDown 0.3s ease-out;
 }
 
-/* Scale Animations */
 .scale-in {
   animation: scaleIn 0.2s ease-out;
 }
@@ -43,7 +39,6 @@
   animation: scaleOut 0.2s ease-in;
 }
 
-/* Rotation Animations */
 .rotate-in {
   animation: rotateIn 0.3s ease-out;
 }
@@ -52,22 +47,18 @@
   animation: spin 1s linear infinite;
 }
 
-/* Pulse Animation */
 .pulse {
   animation: pulse 2s infinite;
 }
 
-/* Bounce Animation */
 .bounce {
   animation: bounce 1s infinite;
 }
 
-/* Shake Animation */
 .shake {
   animation: shake 0.5s ease-in-out;
 }
 
-/* Keyframes */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -233,7 +224,6 @@
   }
 }
 
-/* Loading Spinner Animation */
 @keyframes loading {
   0% {
     background-position: 200% 0;
@@ -243,7 +233,6 @@
   }
 }
 
-/* Hover Animations */
 .hover-bounce:hover {
   animation: bounce 0.5s ease-in-out;
 }
@@ -256,7 +245,6 @@
   animation: shake 0.5s ease-in-out;
 }
 
-/* Transition Classes */
 .transition-all {
   transition: all var(--transition-normal);
 }
@@ -281,7 +269,6 @@
   transition-duration: var(--transition-slow);
 }
 
-/* Reduced Motion Support */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

@@ -1,4 +1,4 @@
-/* User Dashboard Modern Styling */
+
 .UserDashboardContainer {
   min-height: 100vh;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -254,7 +254,6 @@
   box-shadow: 0 6px 20px rgba(1, 14, 208, 0.3);
 }
 
-/* Mobile Sidebar Overlay Enhanced */
 .user-sidebar-mobile-overlay {
   position: fixed;
   top: 0;
@@ -274,12 +273,10 @@
   visibility: visible;
 }
 
-/* Content Area Styling */
 .UserMainContainer .container-fluid {
   padding: 0;
 }
 
-/* Enhanced Button Styles */
 .UserMainContainer .btn-primary,
 .UserDashboard .btn-primary {
   background: linear-gradient(135deg, #010ED0 0%, #0c0fa8 100%);
@@ -318,7 +315,6 @@
   box-shadow: 0 6px 20px rgba(1, 14, 208, 0.3);
 }
 
-/* Small Button Variants */
 .UserMainContainer .btn-sm,
 .UserDashboard .btn-sm {
   padding: 0.5rem 1.5rem;
@@ -327,7 +323,6 @@
   font-weight: 500;
 }
 
-/* Button Link Styles */
 .UserMainContainer .btn[href],
 .UserDashboard .btn[href] {
   text-decoration: none;
@@ -338,7 +333,6 @@
   text-decoration: none;
 }
 
-/* Button Container Spacing */
 .UserDashboard .text-center {
   padding: 2rem 1rem;
 }
@@ -351,26 +345,22 @@
   margin-left: auto;
 }
 
-/* Button Icon Alignment */
 .UserDashboard .action-btn svg,
 .UserDashboard .btn svg {
   vertical-align: middle;
 }
 
-/* Button Group Spacing */
 .UserDashboard .d-flex.align-items-center.justify-content-between .action-btn-sm {
   flex-shrink: 0;
   margin-left: 1rem;
 }
 
-/* Focus States for Better Accessibility */
 .UserDashboard .action-btn:focus-visible,
 .UserDashboard .btn:focus-visible {
   outline: 3px solid rgba(1, 14, 208, 0.5);
   outline-offset: 2px;
 }
 
-/* Loading State for Buttons */
 .UserDashboard .action-btn:disabled,
 .UserDashboard .btn:disabled {
   opacity: 0.6;
@@ -379,7 +369,6 @@
   box-shadow: none !important;
 }
 
-/* Button Text Consistency */
 .UserDashboard .action-btn,
 .UserDashboard .btn {
   white-space: nowrap;
@@ -387,7 +376,6 @@
   letter-spacing: 0.025em;
 }
 
-/* Desktop Layout Responsive */
 @media (min-width: 992px) {
   .UserMainColumn {
     margin-left: 0;
@@ -402,7 +390,6 @@
   }
 }
 
-/* Mobile Layout Enhanced */
 @media (max-width: 991.98px) {
   .UserMainColumn {
     margin-left: 0;
@@ -432,7 +419,6 @@
   }
 }
 
-/* Tablet Layout */
 @media (max-width: 768px) {
   .UserMainContainer {
     padding: 1rem;
@@ -451,13 +437,11 @@
   }
 }
 
-/* Animation and Transitions */
 .UserMainColumn,
 .UserMainContent {
   transition: all 0.3s ease;
 }
 
-/* Global Layout Enhancements */
 .UserDashboardContainer * {
   box-sizing: border-box;
 }
@@ -467,7 +451,6 @@
   padding-right: 0;
 }
 
-/* Common component overrides for User dashboard */
 .UserDashboardContainer .CommonSidebar {
   background-color: #ffffff;
   border-right: 2px solid #e9ecef;
@@ -480,7 +463,6 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-/* Loading States and Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -508,14 +490,12 @@
   animation-delay: 0.3s;
 }
 
-/* Focus States for Accessibility */
 .UserDashboard .action-btn:focus-visible,
 .UserMainContainer .btn:focus-visible {
   outline: 3px solid rgba(1, 14, 208, 0.5);
   outline-offset: 2px;
 }
 
-/* Custom Scrollbar */
 .UserMainContent::-webkit-scrollbar {
   width: 8px;
 }

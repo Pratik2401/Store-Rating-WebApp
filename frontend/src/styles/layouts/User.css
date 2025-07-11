@@ -1,11 +1,10 @@
-/* User Dashboard Layout Styles */
+
 @import "./LayoutCommon.css";
-/* Main Wrapper */
+
 .UserMainWrapper {
   min-height: calc(100vh - 60px);
 }
 
-/* Sidebar */
 .UserSidebar {
   width: 280px;
   min-height: calc(100vh - 60px);
@@ -39,7 +38,6 @@
   font-weight: 600;
 }
 
-/* Sidebar Navigation */
 .UserSidebarNav {
   gap: 0.25rem;
 }
@@ -102,7 +100,6 @@
   transition: opacity 0.3s ease;
 }
 
-/* Collapsed Sidebar Styles */
 .UserSidebar.collapsed .UserSidebarHeader {
   padding: 1rem 0.5rem;
 }
@@ -130,7 +127,6 @@
   padding: 0.5rem;
 }
 
-/* Main Content */
 .UserMainContent {
   flex: 1;
   min-height: calc(100vh - 60px);
@@ -147,7 +143,6 @@
   max-width: 100%;
 }
 
-/* Navbar Styles */
 .UserNavbar {
   height: 60px;
   background-color: var(--background-secondary);
@@ -257,7 +252,6 @@
   width: 1rem;
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
   .UserSidebar {
     position: fixed;
@@ -331,7 +325,6 @@
   }
 }
 
-/* Sidebar Overlay for Mobile */
 @media (max-width: 768px) {
   .UserSidebarOverlay {
     position: fixed;
@@ -352,7 +345,6 @@
   }
 }
 
-/* Animation Enhancements */
 .UserSidebarNavLink {
   position: relative;
   overflow: hidden;
@@ -373,7 +365,6 @@
   left: 100%;
 }
 
-/* Focus Styles for Accessibility */
 .UserSidebarNavLink:focus {
   outline: 2px solid var(--primary-color);
   outline-offset: 2px;
@@ -389,7 +380,6 @@
   outline-offset: 2px;
 }
 
-/* High Contrast Mode */
 @media (prefers-contrast: high) {
   .UserSidebar {
     border-right: 2px solid var(--text-primary);
@@ -409,7 +399,6 @@
   }
 }
 
-/* Print Styles */
 @media print {
   .UserSidebar,
   .UserNavbar {

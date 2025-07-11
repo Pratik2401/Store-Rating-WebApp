@@ -1,4 +1,4 @@
-/* StoreOwner Reviews styles */
+
 
 .StoreOwnerReviewsContainer {
   padding: 0;
@@ -45,7 +45,6 @@
   background-color: #f8f9fa;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .StoreOwnerReviewsContainer h1 {
     font-size: 1.5rem;

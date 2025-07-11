@@ -1,4 +1,4 @@
-/* Stats Card Component Styles */
+
 .StatsCard {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-lg);
@@ -18,7 +18,6 @@
   cursor: pointer;
 }
 
-/* Card Body */
 .StatsCardBody {
   padding: 1.5rem;
   display: flex;
@@ -26,7 +25,6 @@
   gap: 1rem;
 }
 
-/* Icon */
 .StatsCardIcon {
   width: 60px;
   height: 60px;
@@ -76,7 +74,6 @@
   font-size: 1.5rem;
 }
 
-/* Content */
 .StatsCardContent {
   flex: 1;
   min-width: 0;
@@ -99,7 +96,6 @@
   line-height: 1.3;
 }
 
-/* Trend */
 .StatsCardTrend {
   display: flex;
   align-items: center;
@@ -116,7 +112,6 @@
   margin-left: 0.25rem;
 }
 
-/* Card Variants */
 .StatsCard.highlighted {
   border-color: var(--primary-color);
   box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);
@@ -156,7 +151,6 @@
   font-size: 2.75rem;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .StatsCardBody {
     padding: 1.25rem;
@@ -210,7 +204,6 @@
   }
 }
 
-/* Animation Enhancements */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -253,7 +246,6 @@
   animation: countUp 0.8s ease-out 0.3s both;
 }
 
-/* Loading State */
 .StatsCard.loading .StatsCardValue {
   opacity: 0.6;
   animation: pulse 1.5s infinite;
@@ -268,7 +260,6 @@
   }
 }
 
-/* Accessibility */
 .StatsCard.clickable:focus {
   outline: 2px solid var(--primary-color);
   outline-offset: 2px;
@@ -278,7 +269,6 @@
   outline: none;
 }
 
-/* High Contrast Mode */
 @media (prefers-contrast: high) {
   .StatsCard {
     border-width: 2px;
@@ -293,7 +283,6 @@
   }
 }
 
-/* Print Styles */
 @media print {
   .StatsCard {
     break-inside: avoid;

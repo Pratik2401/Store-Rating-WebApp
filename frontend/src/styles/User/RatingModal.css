@@ -1,4 +1,4 @@
-/* Rating Modal Styles */
+
 .rating-modal .modal-content {
   background-color: #ffffff !important;
   border: none;
@@ -12,7 +12,6 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* Modal Header */
 .rating-modal-header {
   background-color: #ffffff;
   border-bottom: 2px solid #f8f9fa;
@@ -41,7 +40,6 @@
   transform: scale(1.1);
 }
 
-/* Modal Body */
 .rating-modal-body {
   background-color: #ffffff;
   padding: 2.5rem;
@@ -55,7 +53,6 @@
   text-align: center;
 }
 
-/* Rating Selector */
 .rating-selector {
   background-color: #f8f9fa;
   border-radius: 16px;
@@ -86,7 +83,6 @@
   filter: drop-shadow(0 2px 4px rgba(1, 14, 208, 0.3));
 }
 
-/* Specifically target SVG elements in stars */
 .rating-selector .star-rating .fa-star svg,
 .rating-selector .star-rating svg.fa-star {
   fill: #dee2e6 !important;
@@ -116,7 +112,6 @@
   font-size: 1.25rem !important;
 }
 
-/* Comment Input */
 .rating-comment-input {
   background-color: #ffffff;
   border: 2px solid #e9ecef;
@@ -142,7 +137,6 @@
   font-style: italic;
 }
 
-/* Modal Footer */
 .rating-modal-footer {
   background-color: #ffffff;
   border-top: 2px solid #f8f9fa;
@@ -151,7 +145,6 @@
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
 }
 
-/* Modal Buttons */
 .rating-cancel-btn {
   background-color: #ffffff;
   border: 2px solid #e9ecef;
@@ -212,7 +205,6 @@
   border-width: 0.15rem;
 }
 
-/* Responsive Design */
 @media (max-width: 576px) {
   .rating-modal .modal-dialog {
     margin: 1rem;
@@ -246,7 +238,6 @@
   }
 }
 
-/* Animation for modal entrance */
 .rating-modal .modal-dialog {
   transition: all 0.4s ease;
 }
@@ -266,7 +257,6 @@
   }
 }
 
-/* Focus states for accessibility */
 .rating-modal .modal-content:focus-within {
   box-shadow: 0 15px 50px rgba(1, 14, 208, 0.25);
 }
